@@ -24,20 +24,16 @@ jobs:
         run: |
           test -f dashboard/index.html     || { echo "GATE FAIL: dashboard/index.html missing"; exit 1; }
           test -f dashboard/app.js         || { echo "GATE FAIL: dashboard/app.js missing"; exit 1; }
-          test -f dashboard/demo-api.js    || { echo "GATE FAIL: dashboard/demo-api.js missing"; exit 1; }
+          test -f dashboard/mock-data.js   || { echo "GATE FAIL: dashboard/mock-data.js missing"; exit 1; }
           test -f dashboard/demo-banner.js || { echo "GATE FAIL: dashboard/demo-banner.js missing"; exit 1; }
-          test -d dashboard/demo-fixtures  || { echo "GATE FAIL: dashboard/demo-fixtures/ missing"; exit 1; }
           test -d dashboard/vendor         || { echo "GATE FAIL: dashboard/vendor/ missing"; exit 1; }
 
-          # Verify demo-api.js injection order
-          DEMO_LINE=$(grep -n 'demo-api.js' dashboard/index.html | head -1 | cut -d: -f1)
+          # Verify mock-data.js loads before app.js
+          MOCK_LINE=$(grep -n 'mock-data.js' dashboard/index.html | head -1 | cut -d: -f1)
           APP_LINE=$(grep -n 'src="app.js"' dashboard/index.html | head -1 | cut -d: -f1)
-          test "$DEMO_LINE" -lt "$APP_LINE" || { echo "GATE FAIL: demo-api.js must precede app.js"; exit 1; }
+          test "$MOCK_LINE" -lt "$APP_LINE" || { echo "GATE FAIL: mock-data.js must precede app.js"; exit 1; }
 
-          FIXTURE_COUNT=$(find dashboard/demo-fixtures -name '*.json' | wc -l)
-          test "$FIXTURE_COUNT" -ge 30 || { echo "GATE FAIL: expected >=30 fixtures, found $FIXTURE_COUNT"; exit 1; }
-
-          echo "Gate 1 PASS: dashboard validated ($FIXTURE_COUNT fixtures)"
+          echo "Gate 1 PASS: dashboard validated"
 
       # --- Hook Gate 2: Size sanity check ---
       - name: Gate - Bundle size check
@@ -71,8 +67,8 @@ jobs:
       - name: Gate - Verify webapp output
         run: |
           test -f webapp/public/agenthalo-demo/index.html || { echo "GATE FAIL: sync did not produce index.html"; exit 1; }
-          test -f webapp/public/agenthalo-demo/demo-api.js || { echo "GATE FAIL: sync did not produce demo-api.js"; exit 1; }
-          grep -q 'demo-api.js' webapp/public/agenthalo-demo/index.html || { echo "GATE FAIL: demo-api.js not injected in index.html"; exit 1; }
+          test -f webapp/public/agenthalo-demo/mock-data.js || { echo "GATE FAIL: sync did not produce mock-data.js"; exit 1; }
+          grep -q 'mock-data.js' webapp/public/agenthalo-demo/index.html || { echo "GATE FAIL: mock-data.js not referenced in index.html"; exit 1; }
           echo "Gate 4 PASS: webapp output verified"
 
       - name: Commit and push
