@@ -1,0 +1,8 @@
+{
+  "locked": false,
+  "has_password": true,
+  "bootstrap_mode": "disabled",
+  "migration_status": "none",
+  "session_count": 1,
+  "scoped_key_count": 0
+}

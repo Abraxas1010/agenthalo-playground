@@ -1,0 +1,89 @@
+{
+  "entries": [
+    {
+      "session_id": "sess_0e32adf0d134",
+      "trust_score": 0.85,
+      "merkle_root": "2c25b72128fbdd48c679e12e5735a5dffc3c04f88b3cb8ed03e0ff7f8e52bad8",
+      "event_count": 40,
+      "computed_at": "2026-03-01T12:00:00Z"
+    },
+    {
+      "session_id": "sess_abe633f3a47a",
+      "trust_score": 0.88,
+      "merkle_root": "6395c78bb5ec3bb72ea11d09dbc2a8d0fbe6599c5d5f8ba7bd94f00a7a05c4d2",
+      "event_count": 47,
+      "computed_at": "2026-03-02T12:00:00Z"
+    },
+    {
+      "session_id": "sess_2b8ea9758113",
+      "trust_score": 0.91,
+      "merkle_root": "462d81e4cddd3b6add52efb3a96abf0ceb9ef1693e639a9af9884d8706364eff",
+      "event_count": 54,
+      "computed_at": "2026-03-03T12:00:00Z"
+    },
+    {
+      "session_id": "sess_7027aa6390a1",
+      "trust_score": 0.94,
+      "merkle_root": "8600402f652070767c64f411ba00e024ab16c99163f209186ccd35ef634e8707",
+      "event_count": 61,
+      "computed_at": "2026-03-04T12:00:00Z"
+    },
+    {
+      "session_id": "sess_3b70093b52bc",
+      "trust_score": 0.97,
+      "merkle_root": "90f1fb1ef62855d4e3ffb17b97a42864a9bd34c42f0d8b5d979d5bd7c162aad3",
+      "event_count": 68,
+      "computed_at": "2026-03-05T12:00:00Z"
+    },
+    {
+      "session_id": "sess_602a04d155c9",
+      "trust_score": 0.85,
+      "merkle_root": "bdef5adf2a588933bab58a75720f6b25a898b869a3511f0ad1c4ba7007980e7e",
+      "event_count": 75,
+      "computed_at": "2026-03-06T12:00:00Z"
+    },
+    {
+      "session_id": "sess_a3c99e9a3d75",
+      "trust_score": 0.88,
+      "merkle_root": "b3580f9c2d318bd515c0cd924a51f2b3081fbdd11b8b955d3cba1b4b8034af28",
+      "event_count": 82,
+      "computed_at": "2026-03-07T12:00:00Z"
+    },
+    {
+      "session_id": "sess_ddea6b89485a",
+      "trust_score": 0.91,
+      "merkle_root": "97b392482afcbd7a8f3d3fccc5d037921d7ef285358290e9ad73e62c0532cd05",
+      "event_count": 89,
+      "computed_at": "2026-03-08T12:00:00Z"
+    },
+    {
+      "session_id": "sess_e7afa042bed4",
+      "trust_score": 0.94,
+      "merkle_root": "90e38a3f3af20348ec1a24b79269341f8e730db763b8dc43ffb0cab9be0b0dd4",
+      "event_count": 96,
+      "computed_at": "2026-03-09T12:00:00Z"
+    },
+    {
+      "session_id": "sess_e6c858abfa77",
+      "trust_score": 0.97,
+      "merkle_root": "b9676bbfcfd7d7d210a6811a665d5f6be476c0601dbe40a250df6a5d15be9cb2",
+      "event_count": 103,
+      "computed_at": "2026-03-10T12:00:00Z"
+    },
+    {
+      "session_id": "sess_657ddc412a47",
+      "trust_score": 0.85,
+      "merkle_root": "53c5a4aa8b3d8ea41f9fa1f8e8089450487a597001b492eabe10bb340e7247fb",
+      "event_count": 110,
+      "computed_at": "2026-03-11T12:00:00Z"
+    },
+    {
+      "session_id": "sess_f04e668a1d0f",
+      "trust_score": 0.88,
+      "merkle_root": "a251f792b081dd1292809991dd840a0e73cb37451d11e19121850c2b7f67f37c",
+      "event_count": 117,
+      "computed_at": "2026-03-12T12:00:00Z"
+    }
+  ],
+  "average_score": 0.91
+}

@@ -1,0 +1,39 @@
+{
+  "jobs": [
+    {
+      "id": "forge_b60ca84a24de",
+      "input_mode": "natural_language",
+      "status": "completed",
+      "created_at": "2026-03-15T10:00:00Z",
+      "lean_output": "theorem demo_thm_0 : True := trivial"
+    },
+    {
+      "id": "forge_854746541fd2",
+      "input_mode": "latex",
+      "status": "completed",
+      "created_at": "2026-03-16T10:00:00Z",
+      "lean_output": "theorem demo_thm_1 : True := trivial"
+    },
+    {
+      "id": "forge_6bdbeea306c3",
+      "input_mode": "lean4_stub",
+      "status": "completed",
+      "created_at": "2026-03-17T10:00:00Z",
+      "lean_output": "theorem demo_thm_2 : True := trivial"
+    },
+    {
+      "id": "forge_056c87725334",
+      "input_mode": "mathlib_search",
+      "status": "completed",
+      "created_at": "2026-03-18T10:00:00Z",
+      "lean_output": "theorem demo_thm_3 : True := trivial"
+    },
+    {
+      "id": "forge_9eaddfe40107",
+      "input_mode": "paper_extract",
+      "status": "running",
+      "created_at": "2026-03-19T10:00:00Z",
+      "lean_output": null
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "proofs": [
+    {
+      "name": "commit_certificate_sheaf_coherence",
+      "lean_decl": "NucleusDB.Core.CommitCertificateSheafCoherence",
+      "status": "verified",
+      "hash": "c61ac58ba496d085",
+      "verified_at": "2026-03-01T06:00:00Z"
+    },
+    {
+      "name": "ipa_opening_soundness",
+      "lean_decl": "NucleusDB.Core.IpaOpeningSoundness",
+      "status": "verified",
+      "hash": "c328b7bee07264d3",
+      "verified_at": "2026-03-02T06:00:00Z"
+    },
+    {
+      "name": "nucleus_step_monotonicity",
+      "lean_decl": "NucleusDB.Core.NucleusStepMonotonicity",
+      "status": "verified",
+      "hash": "63795994b9098668",
+      "verified_at": "2026-03-03T06:00:00Z"
+    },
+    {
+      "name": "certificate_refinement_chain",
+      "lean_decl": "NucleusDB.Core.CertificateRefinementChain",
+      "status": "verified",
+      "hash": "8f57173290a2b52c",
+      "verified_at": "2026-03-04T06:00:00Z"
+    },
+    {
+      "name": "consistency_proof_inclusion",
+      "lean_decl": "NucleusDB.Core.ConsistencyProofInclusion",
+      "status": "verified",
+      "hash": "409a00df5159a31f",
+      "verified_at": "2026-03-05T06:00:00Z"
+    },
+    {
+      "name": "commitment_soundness_bind",
+      "lean_decl": "NucleusDB.Core.CommitmentSoundnessBind",
+      "status": "verified",
+      "hash": "34860cced07eaf79",
+      "verified_at": "2026-03-06T06:00:00Z"
+    },
+    {
+      "name": "dual_authorization_composability",
+      "lean_decl": "NucleusDB.Core.DualAuthorizationComposability",
+      "status": "verified",
+      "hash": "67a110532ed5419e",
+      "verified_at": "2026-03-07T06:00:00Z"
+    },
+    {
+      "name": "hybrid_kem_security",
+      "lean_decl": "NucleusDB.Core.HybridKemSecurity",
+      "status": "verified",
+      "hash": "4554281d6b28a0c8",
+      "verified_at": "2026-03-08T06:00:00Z"
+    },
+    {
+      "name": "connectivity_preservation",
+      "lean_decl": "NucleusDB.Core.ConnectivityPreservation",
+      "status": "verified",
+      "hash": "7e037d66504e1ab4",
+      "verified_at": "2026-03-09T06:00:00Z"
+    },
+    {
+      "name": "component_lifting_monotonicity",
+      "lean_decl": "NucleusDB.Core.ComponentLiftingMonotonicity",
+      "status": "verified",
+      "hash": "8bcc6f4e7a0fd9ca",
+      "verified_at": "2026-03-10T06:00:00Z"
+    },
+    {
+      "name": "trace_section_compatibility",
+      "lean_decl": "NucleusDB.Core.TraceSectionCompatibility",
+      "status": "verified",
+      "hash": "6c801aa0d83ee861",
+      "verified_at": "2026-03-11T06:00:00Z"
+    },
+    {
+      "name": "witness_chain_completeness",
+      "lean_decl": "NucleusDB.Core.WitnessChainCompleteness",
+      "status": "verified",
+      "hash": "b335cce325446916",
+      "verified_at": "2026-03-12T06:00:00Z"
+    }
+  ],
+  "total": 12,
+  "all_verified": true
+}

@@ -1,0 +1,48 @@
+{
+  "columns": [
+    "id",
+    "agent_type",
+    "model",
+    "status",
+    "cost_usd"
+  ],
+  "rows": [
+    [
+      "sess_0e32adf0d134",
+      "claude",
+      "claude-opus-4-6",
+      "completed",
+      1.5
+    ],
+    [
+      "sess_abe633f3a47a",
+      "codex",
+      "codex-mini-latest",
+      "completed",
+      2.3
+    ],
+    [
+      "sess_2b8ea9758113",
+      "gemini",
+      "gemini-2.5-pro",
+      "completed",
+      3.1
+    ],
+    [
+      "sess_7027aa6390a1",
+      "claude",
+      "claude-opus-4-6",
+      "completed",
+      3.9
+    ],
+    [
+      "sess_3b70093b52bc",
+      "codex",
+      "codex-mini-latest",
+      "completed",
+      4.7
+    ]
+  ],
+  "row_count": 5,
+  "elapsed_ms": 12
+}

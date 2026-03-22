@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "demo": true,
+  "id": "pty_58ae3708ee5a",
+  "ws_url": "/api/cockpit/sessions/pty_58ae3708ee5a/ws",
+  "message": "This action is simulated in demo mode. Install AgentHALO for real terminal sessions."
+}

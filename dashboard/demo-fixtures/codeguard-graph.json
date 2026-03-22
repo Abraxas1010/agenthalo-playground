@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "CommitCert",
+      "label": "CommitCert"
+    },
+    {
+      "id": "ShellAuth",
+      "label": "ShellAuth"
+    },
+    {
+      "id": "HybridKem",
+      "label": "HybridKem"
+    },
+    {
+      "id": "MerkleVerify",
+      "label": "MerkleVerify"
+    },
+    {
+      "id": "GenesisDerive",
+      "label": "GenesisDerive"
+    }
+  ],
+  "edges": [
+    {
+      "from": "CommitCert",
+      "to": "MerkleVerify"
+    },
+    {
+      "from": "ShellAuth",
+      "to": "GenesisDerive"
+    },
+    {
+      "from": "HybridKem",
+      "to": "GenesisDerive"
+    },
+    {
+      "from": "MerkleVerify",
+      "to": "CommitCert"
+    }
+  ]
+}

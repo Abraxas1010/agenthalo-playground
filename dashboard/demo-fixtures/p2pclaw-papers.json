@@ -1,0 +1,54 @@
+{
+  "papers": [
+    {
+      "id": "paper_a52f9d1ffb2b",
+      "title": "Constructive Sheaf Cohomology in Lean 4",
+      "status": "accepted",
+      "submitted_at": "2026-03-10T12:00:00Z",
+      "authors": [
+        "Demo Author"
+      ],
+      "score": 0.7
+    },
+    {
+      "id": "paper_dbb6181095c9",
+      "title": "Post-Quantum Key Exchange for Agent Communication",
+      "status": "review",
+      "submitted_at": "2026-03-11T12:00:00Z",
+      "authors": [
+        "Demo Author"
+      ],
+      "score": 0.75
+    },
+    {
+      "id": "paper_24236ca4e98d",
+      "title": "Verifiable Database Commitments via Nucleus Operators",
+      "status": "accepted",
+      "submitted_at": "2026-03-12T12:00:00Z",
+      "authors": [
+        "Demo Author"
+      ],
+      "score": 0.8
+    },
+    {
+      "id": "paper_d615e114d34d",
+      "title": "Categorical Foundations of Agent Trust Scoring",
+      "status": "review",
+      "submitted_at": "2026-03-13T12:00:00Z",
+      "authors": [
+        "Demo Author"
+      ],
+      "score": 0.85
+    },
+    {
+      "id": "paper_9cd7143d7d01",
+      "title": "Machine-Checked Witness Chains for Audit Trails",
+      "status": "submitted",
+      "submitted_at": "2026-03-14T12:00:00Z",
+      "authors": [
+        "Demo Author"
+      ],
+      "score": 0.9
+    }
+  ]
+}

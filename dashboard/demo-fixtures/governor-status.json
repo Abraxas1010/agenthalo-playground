@@ -1,0 +1,32 @@
+{
+  "governors": [
+    {
+      "name": "compute",
+      "status": "nominal",
+      "utilization": 0.32,
+      "limit": 100,
+      "current": 32
+    },
+    {
+      "name": "pty",
+      "status": "nominal",
+      "utilization": 0.1,
+      "limit": 10,
+      "current": 1
+    },
+    {
+      "name": "proxy",
+      "status": "nominal",
+      "utilization": 0.0,
+      "limit": 1000,
+      "current": 0
+    },
+    {
+      "name": "comms",
+      "status": "nominal",
+      "utilization": 0.05,
+      "limit": 50,
+      "current": 2
+    }
+  ]
+}

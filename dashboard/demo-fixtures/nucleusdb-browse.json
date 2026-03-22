@@ -1,0 +1,127 @@
+{
+  "rows": [
+    {
+      "table": "sessions",
+      "key": "row_3c831eb5a239",
+      "preview": "Row 0 data preview...",
+      "size_bytes": 128
+    },
+    {
+      "table": "events",
+      "key": "row_0f719b1f3a42",
+      "preview": "Row 1 data preview...",
+      "size_bytes": 160
+    },
+    {
+      "table": "attestations",
+      "key": "row_4568437f50f4",
+      "preview": "Row 2 data preview...",
+      "size_bytes": 192
+    },
+    {
+      "table": "proofs",
+      "key": "row_766c7c97fa4a",
+      "preview": "Row 3 data preview...",
+      "size_bytes": 224
+    },
+    {
+      "table": "memories",
+      "key": "row_06a209481b65",
+      "preview": "Row 4 data preview...",
+      "size_bytes": 256
+    },
+    {
+      "table": "sessions",
+      "key": "row_5a9dd7f3379c",
+      "preview": "Row 5 data preview...",
+      "size_bytes": 288
+    },
+    {
+      "table": "events",
+      "key": "row_a19bc50957e1",
+      "preview": "Row 6 data preview...",
+      "size_bytes": 320
+    },
+    {
+      "table": "attestations",
+      "key": "row_5259b5ef73c1",
+      "preview": "Row 7 data preview...",
+      "size_bytes": 352
+    },
+    {
+      "table": "proofs",
+      "key": "row_8522817090d2",
+      "preview": "Row 8 data preview...",
+      "size_bytes": 384
+    },
+    {
+      "table": "memories",
+      "key": "row_eee830397354",
+      "preview": "Row 9 data preview...",
+      "size_bytes": 416
+    },
+    {
+      "table": "sessions",
+      "key": "row_14e93713d6c9",
+      "preview": "Row 10 data preview...",
+      "size_bytes": 448
+    },
+    {
+      "table": "events",
+      "key": "row_2fc3a00a8dd2",
+      "preview": "Row 11 data preview...",
+      "size_bytes": 480
+    },
+    {
+      "table": "attestations",
+      "key": "row_fa26f0d9e0ec",
+      "preview": "Row 12 data preview...",
+      "size_bytes": 512
+    },
+    {
+      "table": "proofs",
+      "key": "row_e7ae3782e8a2",
+      "preview": "Row 13 data preview...",
+      "size_bytes": 544
+    },
+    {
+      "table": "memories",
+      "key": "row_085239380172",
+      "preview": "Row 14 data preview...",
+      "size_bytes": 576
+    },
+    {
+      "table": "sessions",
+      "key": "row_6ce3f6e1c9d7",
+      "preview": "Row 15 data preview...",
+      "size_bytes": 608
+    },
+    {
+      "table": "events",
+      "key": "row_485953c2cfd2",
+      "preview": "Row 16 data preview...",
+      "size_bytes": 640
+    },
+    {
+      "table": "attestations",
+      "key": "row_cc56d01a57b1",
+      "preview": "Row 17 data preview...",
+      "size_bytes": 672
+    },
+    {
+      "table": "proofs",
+      "key": "row_9f9a72e9c96a",
+      "preview": "Row 18 data preview...",
+      "size_bytes": 704
+    },
+    {
+      "table": "memories",
+      "key": "row_2692b578c031",
+      "preview": "Row 19 data preview...",
+      "size_bytes": 736
+    }
+  ],
+  "total": 892,
+  "page": 1,
+  "page_size": 20
+}

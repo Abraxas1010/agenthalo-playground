@@ -1,0 +1,434 @@
+/* Orchestration Workflow Canvas — AgentHALO */
+
+.orch-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 32px);
+  gap: 0;
+}
+
+/* ── Toolbar ─────────────────────────────────────────── */
+.orch-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: var(--card-bg, #1a1a2e);
+  border-bottom: 1px solid var(--border, #2a2a3e);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.orch-toolbar .orch-name-input {
+  background: var(--input-bg, #0d0d1a);
+  border: 1px solid var(--border, #2a2a3e);
+  color: var(--text, #e0e0e0);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  min-width: 200px;
+}
+
+.orch-toolbar .orch-name-input:focus {
+  outline: none;
+  border-color: var(--blue, #60a5fa);
+}
+
+.orch-toolbar .orch-btn {
+  background: var(--input-bg, #0d0d1a);
+  border: 1px solid var(--border, #2a2a3e);
+  color: var(--text-dim, #888);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.orch-toolbar .orch-btn:hover {
+  border-color: var(--blue, #60a5fa);
+  color: var(--text, #e0e0e0);
+}
+
+.orch-toolbar .orch-btn.primary {
+  background: var(--blue, #60a5fa);
+  border-color: var(--blue, #60a5fa);
+  color: #fff;
+}
+
+.orch-toolbar .orch-btn.primary:hover {
+  filter: brightness(1.15);
+}
+
+.orch-toolbar .orch-btn.danger {
+  border-color: var(--red, #f87171);
+  color: var(--red, #f87171);
+}
+
+.orch-toolbar .orch-btn.danger:hover {
+  background: var(--red, #f87171);
+  color: #fff;
+}
+
+.orch-toolbar .orch-separator {
+  width: 1px;
+  height: 20px;
+  background: var(--border, #2a2a3e);
+}
+
+.orch-toolbar .orch-select {
+  background: var(--input-bg, #0d0d1a);
+  border: 1px solid var(--border, #2a2a3e);
+  color: var(--text, #e0e0e0);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.orch-toolbar .orch-spacer {
+  flex: 1;
+}
+
+/* ── Main area: canvas + side panel ──────────────────── */
+.orch-main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+.orch-canvas-wrap {
+  flex: 1;
+  position: relative;
+  min-width: 0;
+  background: #0a0a14;
+}
+
+.orch-canvas-wrap canvas {
+  display: block;
+  /* Do NOT set CSS width/height — LiteGraph reads the canvas element's
+     width/height attributes for coordinate calculations.  CSS forcing
+     a different display size breaks link-drawing hit testing. The
+     ResizeObserver in orchestration.js keeps the buffer in sync. */
+}
+
+/* ── Side panel (templates + info) ───────────────────── */
+.orch-side-panel {
+  width: 280px;
+  flex-shrink: 0;
+  background: var(--card-bg, #1a1a2e);
+  border-left: 1px solid var(--border, #2a2a3e);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.orch-side-panel.collapsed {
+  width: 0;
+  overflow: hidden;
+  border-left: none;
+}
+
+.orch-side-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border, #2a2a3e);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text, #e0e0e0);
+}
+
+.orch-side-toggle {
+  background: none;
+  border: none;
+  color: var(--text-dim, #888);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+}
+
+.orch-side-toggle:hover { color: var(--text, #e0e0e0); }
+
+.orch-side-section {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border, #2a2a3e);
+}
+
+.orch-side-section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim, #888);
+  margin-bottom: 8px;
+}
+
+/* ── Template cards ──────────────────────────────────── */
+.orch-template-card {
+  background: var(--input-bg, #0d0d1a);
+  border: 1px solid var(--border, #2a2a3e);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.orch-template-card:hover {
+  border-color: var(--blue, #60a5fa);
+}
+
+.orch-template-card .template-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text, #e0e0e0);
+  margin-bottom: 4px;
+}
+
+.orch-template-card .template-desc {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim, #888);
+  line-height: 1.4;
+}
+
+.orch-template-card .template-nodes {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.orch-template-card .template-node-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.orch-template-card .template-node-pill.agent { background: #7c3aed; }
+.orch-template-card .template-node-pill.decision { background: #f59e0b; }
+.orch-template-card .template-node-pill.transform { background: #6b7280; }
+
+/* ── Node info panel ─────────────────────────────────── */
+.orch-node-info {
+  padding: 12px 14px;
+}
+
+.orch-node-info .info-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-dim, #888);
+  margin-bottom: 2px;
+}
+
+.orch-node-info .info-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  color: var(--text, #e0e0e0);
+  margin-bottom: 10px;
+}
+
+.orch-node-info .info-value input,
+.orch-node-info .info-value select,
+.orch-node-info .info-value textarea {
+  width: 100%;
+  background: var(--input-bg, #0d0d1a);
+  border: 1px solid var(--border, #2a2a3e);
+  color: var(--text, #e0e0e0);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.orch-node-info .info-value textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+/* ── Status bar ──────────────────────────────────────── */
+.orch-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 16px;
+  background: var(--card-bg, #1a1a2e);
+  border-top: 1px solid var(--border, #2a2a3e);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim, #888);
+  flex-shrink: 0;
+}
+
+.orch-status-bar .status-item { display: flex; align-items: center; gap: 4px; }
+.orch-status-bar .status-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+}
+.orch-status-bar .status-dot.ok { background: var(--green, #4ade80); }
+.orch-status-bar .status-dot.warn { background: var(--amber, #fbbf24); }
+.orch-status-bar .status-dot.off { background: var(--text-dim, #888); }
+
+/* ── Execution History ──────────────────────────────── */
+.orch-history-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.orch-history-entry {
+  background: var(--input-bg, #0d0d1a);
+  border: 1px solid var(--border, #2a2a3e);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.orch-history-entry:hover {
+  border-color: var(--blue, #60a5fa);
+}
+
+.hist-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.hist-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.hist-status.hist-ok {
+  color: var(--green, #4ade80);
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.hist-status.hist-fail {
+  color: var(--red, #f87171);
+  background: rgba(248, 113, 113, 0.1);
+}
+
+.hist-status.hist-pending {
+  color: var(--amber, #fbbf24);
+  background: rgba(251, 191, 36, 0.1);
+}
+
+.hist-wf {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text, #e0e0e0);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hist-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim, #888);
+}
+
+.hist-events {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border, #2a2a3e);
+}
+
+.hist-event {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim, #888);
+  padding: 2px 0;
+  display: flex;
+  gap: 6px;
+}
+
+.hist-event-type {
+  color: var(--text-dim, #888);
+  min-width: 80px;
+}
+
+.hist-event-msg {
+  color: var(--text, #e0e0e0);
+  word-break: break-word;
+}
+
+/* ── Node palette (drag-and-drop) ──────────────────── */
+.orch-node-palette {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.orch-palette-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--input-bg, #0d0d1a);
+  border: 1px solid var(--border, #2a2a3e);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: grab;
+  transition: border-color 0.15s ease, background 0.15s ease;
+  user-select: none;
+}
+
+.orch-palette-item:hover {
+  border-color: var(--blue, #60a5fa);
+  background: rgba(96, 165, 250, 0.05);
+}
+
+.orch-palette-item:active {
+  cursor: grabbing;
+  opacity: 0.7;
+}
+
+.palette-color-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.palette-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text, #e0e0e0);
+  white-space: nowrap;
+}
+
+.palette-desc {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim, #888);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── litegraph overrides (dark theme integration) ────── */
+.litegraph .litemenu-entry {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12px !important;
+}

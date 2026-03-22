@@ -1,0 +1,77 @@
+{
+  "artifacts": [
+    {
+      "id": "cg_a0d8be734b84",
+      "name": "NucleusDB.Core.CommitCert",
+      "stage": "locked",
+      "hash": "f22b3726cdf67f37",
+      "locked_at": "2026-03-10T12:00:00Z"
+    },
+    {
+      "id": "cg_1f7438940e90",
+      "name": "NucleusDB.Core.ShellAuth",
+      "stage": "locked",
+      "hash": "5e4935aca7e55622",
+      "locked_at": "2026-03-11T12:00:00Z"
+    },
+    {
+      "id": "cg_28778bba37cc",
+      "name": "Halo.Crypto.HybridKem",
+      "stage": "review",
+      "hash": "7e7108331055d4eb",
+      "locked_at": null
+    },
+    {
+      "id": "cg_1edea1d5b881",
+      "name": "Halo.Trust.MerkleVerify",
+      "stage": "locked",
+      "hash": "df7281c070810c22",
+      "locked_at": "2026-03-13T12:00:00Z"
+    },
+    {
+      "id": "cg_392719ab5a69",
+      "name": "Halo.Identity.GenesisDerive",
+      "stage": "locked",
+      "hash": "eea7de38148f4160",
+      "locked_at": "2026-03-14T12:00:00Z"
+    },
+    {
+      "id": "cg_66736089de27",
+      "name": "Halo.ProofGate.SurfaceCheck",
+      "stage": "locked",
+      "hash": "98c6e610e4e6b161",
+      "locked_at": "2026-03-15T12:00:00Z"
+    },
+    {
+      "id": "cg_e02e50ecd642",
+      "name": "Halo.Comms.DIDCommSign",
+      "stage": "review",
+      "hash": "96c681236d241ef7",
+      "locked_at": "2026-03-16T12:00:00Z"
+    },
+    {
+      "id": "cg_a69e6d2a89b1",
+      "name": "Halo.Governor.AdmitCheck",
+      "stage": "locked",
+      "hash": "da9964d56f05afef",
+      "locked_at": "2026-03-17T12:00:00Z"
+    },
+    {
+      "id": "cg_b6f7a8044967",
+      "name": "NucleusDB.Core.AppendSeal",
+      "stage": "locked",
+      "hash": "7fc9714e4620454f",
+      "locked_at": "2026-03-18T12:00:00Z"
+    },
+    {
+      "id": "cg_4fb9b18cf491",
+      "name": "Halo.Witness.ChainComplete",
+      "stage": "locked",
+      "hash": "5450f80e0e15f2d6",
+      "locked_at": "2026-03-19T12:00:00Z"
+    }
+  ],
+  "locked_count": 8,
+  "review_count": 2,
+  "total": 10
+}

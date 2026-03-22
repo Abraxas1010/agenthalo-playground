@@ -1,0 +1,21 @@
+{
+  "ready": true,
+  "checks": [
+    {
+      "name": "identity",
+      "status": "pass"
+    },
+    {
+      "name": "crypto",
+      "status": "pass"
+    },
+    {
+      "name": "proof_gate",
+      "status": "pass"
+    },
+    {
+      "name": "governor",
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "dashboard_port": 3100,
+  "crt_effects": true,
+  "system_monitor_enabled": false,
+  "proxy_enabled": false,
+  "orchestrator_enabled": true,
+  "p2pclaw_enabled": true,
+  "codeguard_enabled": true,
+  "forge_enabled": true,
+  "observatory_enabled": true,
+  "lean_project": "/workspace/lean",
+  "addons": []
+}

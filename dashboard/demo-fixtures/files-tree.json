@@ -1,0 +1,53 @@
+{
+  "tree": [
+    {
+      "name": "lean/",
+      "type": "dir",
+      "children": [
+        {
+          "name": "HeytingLean/",
+          "type": "dir",
+          "children": [
+            {
+              "name": "Bridge.lean",
+              "type": "file",
+              "size": 25600
+            },
+            {
+              "name": "Derives.lean",
+              "type": "file",
+              "size": 58000
+            }
+          ]
+        },
+        {
+          "name": "lakefile.lean",
+          "type": "file",
+          "size": 3200
+        }
+      ]
+    },
+    {
+      "name": "src/",
+      "type": "dir",
+      "children": [
+        {
+          "name": "dashboard/",
+          "type": "dir",
+          "children": [
+            {
+              "name": "api.rs",
+              "type": "file",
+              "size": 45000
+            },
+            {
+              "name": "mod.rs",
+              "type": "file",
+              "size": 12000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

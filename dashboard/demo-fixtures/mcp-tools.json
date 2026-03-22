@@ -1,0 +1,311 @@
+{
+  "tools": [
+    {
+      "name": "heyting_prove_assist",
+      "category": "atp",
+      "description": "Tool: Prove Assist",
+      "call_count": 3
+    },
+    {
+      "name": "heyting_evolutionary_proof_search",
+      "category": "search",
+      "description": "Tool: Evolutionary Proof Search",
+      "call_count": 10
+    },
+    {
+      "name": "heyting_hybrid_premise_search",
+      "category": "index",
+      "description": "Tool: Hybrid Premise Search",
+      "call_count": 17
+    },
+    {
+      "name": "heyting_try_tactic",
+      "category": "translate",
+      "description": "Tool: Try Tactic",
+      "call_count": 24
+    },
+    {
+      "name": "heyting_goal_from_sorry",
+      "category": "lean",
+      "description": "Tool: Goal From Sorry",
+      "call_count": 31
+    },
+    {
+      "name": "heyting_find_sorries",
+      "category": "data",
+      "description": "Tool: Find Sorries",
+      "call_count": 38
+    },
+    {
+      "name": "heyting_pick_sorry_target",
+      "category": "overlay",
+      "description": "Tool: Pick Sorry Target",
+      "call_count": 45
+    },
+    {
+      "name": "heyting_typecheck_snippet",
+      "category": "infra",
+      "description": "Tool: Typecheck Snippet",
+      "call_count": 2
+    },
+    {
+      "name": "heyting_lean_check",
+      "category": "atp",
+      "description": "Tool: Lean Check",
+      "call_count": 9
+    },
+    {
+      "name": "heyting_guard_no_sorry",
+      "category": "search",
+      "description": "Tool: Guard No Sorry",
+      "call_count": 16
+    },
+    {
+      "name": "heyting_search",
+      "category": "index",
+      "description": "Tool: Search",
+      "call_count": 23
+    },
+    {
+      "name": "heyting_mathlib_search",
+      "category": "translate",
+      "description": "Tool: Mathlib Search",
+      "call_count": 30
+    },
+    {
+      "name": "heyting_leanexplore_local_search",
+      "category": "lean",
+      "description": "Tool: Leanexplore Local Search",
+      "call_count": 37
+    },
+    {
+      "name": "heyting_loogle_local_search",
+      "category": "data",
+      "description": "Tool: Loogle Local Search",
+      "call_count": 44
+    },
+    {
+      "name": "heyting_knowledge_search",
+      "category": "overlay",
+      "description": "Tool: Knowledge Search",
+      "call_count": 1
+    },
+    {
+      "name": "heyting_search_methodology",
+      "category": "infra",
+      "description": "Tool: Search Methodology",
+      "call_count": 8
+    },
+    {
+      "name": "heyting_reservoir_search",
+      "category": "atp",
+      "description": "Tool: Reservoir Search",
+      "call_count": 15
+    },
+    {
+      "name": "heyting_build_index",
+      "category": "search",
+      "description": "Tool: Build Index",
+      "call_count": 22
+    },
+    {
+      "name": "heyting_build_embeddings",
+      "category": "index",
+      "description": "Tool: Build Embeddings",
+      "call_count": 29
+    },
+    {
+      "name": "heyting_compute_decl_pagerank",
+      "category": "translate",
+      "description": "Tool: Compute Decl Pagerank",
+      "call_count": 36
+    },
+    {
+      "name": "heyting_translate_coq_to_lean",
+      "category": "lean",
+      "description": "Tool: Translate Coq To Lean",
+      "call_count": 43
+    },
+    {
+      "name": "heyting_translate_lean_to_coq",
+      "category": "data",
+      "description": "Tool: Translate Lean To Coq",
+      "call_count": 0
+    },
+    {
+      "name": "heyting_translate_isabelle_to_lean",
+      "category": "overlay",
+      "description": "Tool: Translate Isabelle To Lean",
+      "call_count": 7
+    },
+    {
+      "name": "heyting_translate_lean_to_agda",
+      "category": "infra",
+      "description": "Tool: Translate Lean To Agda",
+      "call_count": 14
+    },
+    {
+      "name": "heyting_translate_lean_to_metamath",
+      "category": "atp",
+      "description": "Tool: Translate Lean To Metamath",
+      "call_count": 21
+    },
+    {
+      "name": "heyting_qa_dev",
+      "category": "search",
+      "description": "Tool: Qa Dev",
+      "call_count": 28
+    },
+    {
+      "name": "heyting_build_all_exes",
+      "category": "index",
+      "description": "Tool: Build All Exes",
+      "call_count": 35
+    },
+    {
+      "name": "heyting_run_all_exes",
+      "category": "translate",
+      "description": "Tool: Run All Exes",
+      "call_count": 42
+    },
+    {
+      "name": "heyting_system_overview",
+      "category": "lean",
+      "description": "Tool: System Overview",
+      "call_count": 49
+    },
+    {
+      "name": "heyting_resource_snapshot",
+      "category": "data",
+      "description": "Tool: Resource Snapshot",
+      "call_count": 6
+    },
+    {
+      "name": "heyting_session",
+      "category": "overlay",
+      "description": "Tool: Session",
+      "call_count": 13
+    },
+    {
+      "name": "heyting_conjecture",
+      "category": "infra",
+      "description": "Tool: Conjecture",
+      "call_count": 20
+    },
+    {
+      "name": "heyting_proof_tree",
+      "category": "atp",
+      "description": "Tool: Proof Tree",
+      "call_count": 27
+    },
+    {
+      "name": "heyting_overlay_query",
+      "category": "search",
+      "description": "Tool: Overlay Query",
+      "call_count": 34
+    },
+    {
+      "name": "heyting_overlay_validate",
+      "category": "index",
+      "description": "Tool: Overlay Validate",
+      "call_count": 41
+    },
+    {
+      "name": "heyting_overlay_enrich_queue_vllm",
+      "category": "translate",
+      "description": "Tool: Overlay Enrich Queue Vllm",
+      "call_count": 48
+    },
+    {
+      "name": "heyting_paper_extract_full",
+      "category": "lean",
+      "description": "Tool: Paper Extract Full",
+      "call_count": 5
+    },
+    {
+      "name": "heyting_paper_suggest_lean_index",
+      "category": "data",
+      "description": "Tool: Paper Suggest Lean Index",
+      "call_count": 12
+    },
+    {
+      "name": "heyting_paper_to_overlay",
+      "category": "overlay",
+      "description": "Tool: Paper To Overlay",
+      "call_count": 19
+    },
+    {
+      "name": "heyting_contracts_pipeline_run",
+      "category": "infra",
+      "description": "Tool: Contracts Pipeline Run",
+      "call_count": 26
+    },
+    {
+      "name": "heyting_lean_yul_emit",
+      "category": "atp",
+      "description": "Tool: Lean Yul Emit",
+      "call_count": 33
+    },
+    {
+      "name": "heyting_lean_yul_compile_solc",
+      "category": "search",
+      "description": "Tool: Lean Yul Compile Solc",
+      "call_count": 40
+    },
+    {
+      "name": "heyting_deep_research",
+      "category": "index",
+      "description": "Tool: Deep Research",
+      "call_count": 47
+    },
+    {
+      "name": "heyting_web_search",
+      "category": "translate",
+      "description": "Tool: Web Search",
+      "call_count": 4
+    },
+    {
+      "name": "heyting_web_fetch",
+      "category": "lean",
+      "description": "Tool: Web Fetch",
+      "call_count": 11
+    },
+    {
+      "name": "heyting_agent_invoke",
+      "category": "data",
+      "description": "Tool: Agent Invoke",
+      "call_count": 18
+    },
+    {
+      "name": "heyting_agentic_toolcall_mcp_loop",
+      "category": "overlay",
+      "description": "Tool: Agentic Toolcall Mcp Loop",
+      "call_count": 25
+    },
+    {
+      "name": "heyting_mcp_smoke_harness",
+      "category": "infra",
+      "description": "Tool: Mcp Smoke Harness",
+      "call_count": 32
+    },
+    {
+      "name": "heyting_proof_codegen_on_demand",
+      "category": "atp",
+      "description": "Tool: Proof Codegen On Demand",
+      "call_count": 39
+    },
+    {
+      "name": "heyting_proof_codegen_coverage",
+      "category": "search",
+      "description": "Tool: Proof Codegen Coverage",
+      "call_count": 46
+    },
+    {
+      "name": "heyting_proof_commit",
+      "category": "index",
+      "description": "Tool: Proof Commit",
+      "call_count": 3
+    }
+  ],
+  "total": 51
+}

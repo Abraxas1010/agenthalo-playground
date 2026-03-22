@@ -1,0 +1,52 @@
+[
+  {
+    "category": "atp",
+    "count": 28,
+    "domain": "meta-atp"
+  },
+  {
+    "category": "search",
+    "count": 18,
+    "domain": "meta-atp-retrieval"
+  },
+  {
+    "category": "index",
+    "count": 8,
+    "domain": "meta-overlay"
+  },
+  {
+    "category": "translate",
+    "count": 24,
+    "domain": "meta-translation"
+  },
+  {
+    "category": "lean",
+    "count": 12,
+    "domain": "meta-proof"
+  },
+  {
+    "category": "data",
+    "count": 16,
+    "domain": "meta-overlay"
+  },
+  {
+    "category": "overlay",
+    "count": 14,
+    "domain": "meta-overlay"
+  },
+  {
+    "category": "paper",
+    "count": 10,
+    "domain": "meta-paper-pipeline"
+  },
+  {
+    "category": "infra",
+    "count": 12,
+    "domain": "meta-system"
+  },
+  {
+    "category": "contracts",
+    "count": 6,
+    "domain": "meta-export-synthesis"
+  }
+]

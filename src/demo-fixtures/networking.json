@@ -1,0 +1,10 @@
+{
+  "available": [
+    "libp2p",
+    "didcomm",
+    "nym"
+  ],
+  "active": [
+    "didcomm"
+  ]
+}

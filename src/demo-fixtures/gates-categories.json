@@ -1,0 +1,62 @@
+[
+  {
+    "name": "git_worktree",
+    "gates": [
+      {
+        "name": "no_sorry_guard",
+        "status": "pass",
+        "last_checked": "2026-03-21T06:00:00Z"
+      },
+      {
+        "name": "build_wfail",
+        "status": "pass",
+        "last_checked": "2026-03-21T06:00:00Z"
+      },
+      {
+        "name": "exe_builds",
+        "status": "pass",
+        "last_checked": "2026-03-21T06:00:00Z"
+      }
+    ]
+  },
+  {
+    "name": "communication",
+    "gates": [
+      {
+        "name": "privacy_controller",
+        "status": "pass",
+        "last_checked": "2026-03-21T06:00:00Z"
+      },
+      {
+        "name": "nym_connectivity",
+        "status": "skip",
+        "last_checked": "2026-03-21T06:00:00Z"
+      },
+      {
+        "name": "didcomm_signing",
+        "status": "pass",
+        "last_checked": "2026-03-21T06:00:00Z"
+      }
+    ]
+  },
+  {
+    "name": "internal",
+    "gates": [
+      {
+        "name": "proof_gate",
+        "status": "pass",
+        "last_checked": "2026-03-21T06:00:00Z"
+      },
+      {
+        "name": "trust_threshold",
+        "status": "pass",
+        "last_checked": "2026-03-21T06:00:00Z"
+      },
+      {
+        "name": "governor_limits",
+        "status": "pass",
+        "last_checked": "2026-03-21T06:00:00Z"
+      }
+    ]
+  }
+]

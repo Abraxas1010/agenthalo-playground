@@ -1,0 +1,17 @@
+{
+  "mcp": true,
+  "nucleusdb": true,
+  "proof_gate": true,
+  "trust": true,
+  "crypto": true,
+  "deploy": true,
+  "orchestrator": true,
+  "p2pclaw": true,
+  "codeguard": true,
+  "gates": true,
+  "forge": true,
+  "observatory": true,
+  "cockpit": true,
+  "skills": true,
+  "wdk": false
+}

@@ -1,0 +1,39 @@
+{
+  "profiles": [
+    {
+      "name": "claude-opus",
+      "agent": "claude",
+      "model": "claude-opus-4-6",
+      "status": "available",
+      "description": "Full Claude Opus agent with MCP tool access"
+    },
+    {
+      "name": "codex-worker",
+      "agent": "codex",
+      "model": "codex-mini-latest",
+      "status": "available",
+      "description": "Lightweight Codex worker for code tasks"
+    },
+    {
+      "name": "gemini-analyst",
+      "agent": "gemini",
+      "model": "gemini-2.5-pro",
+      "status": "available",
+      "description": "Gemini agent for analysis and research"
+    },
+    {
+      "name": "custom-local",
+      "agent": "custom",
+      "model": "local-llm",
+      "status": "draft",
+      "description": "Custom local model configuration"
+    },
+    {
+      "name": "multi-agent-team",
+      "agent": "orchestrator",
+      "model": "multi",
+      "status": "available",
+      "description": "Multi-agent orchestrated workflow"
+    }
+  ]
+}

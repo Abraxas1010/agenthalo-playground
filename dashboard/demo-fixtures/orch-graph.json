@@ -1,0 +1,60 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "trigger",
+      "label": "User Request"
+    },
+    {
+      "id": "plan",
+      "type": "planner",
+      "label": "Task Planner"
+    },
+    {
+      "id": "search",
+      "type": "worker",
+      "label": "Premise Search"
+    },
+    {
+      "id": "prove",
+      "type": "worker",
+      "label": "Proof Attempt"
+    },
+    {
+      "id": "verify",
+      "type": "gate",
+      "label": "Lean Verify"
+    },
+    {
+      "id": "done",
+      "type": "terminal",
+      "label": "Complete"
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "plan"
+    },
+    {
+      "from": "plan",
+      "to": "search"
+    },
+    {
+      "from": "plan",
+      "to": "prove"
+    },
+    {
+      "from": "search",
+      "to": "prove"
+    },
+    {
+      "from": "prove",
+      "to": "verify"
+    },
+    {
+      "from": "verify",
+      "to": "done"
+    }
+  ]
+}

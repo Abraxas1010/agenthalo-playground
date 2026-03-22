@@ -1,0 +1,32 @@
+{
+  "completed": true,
+  "stages": [
+    {
+      "name": "entropy_harvest",
+      "status": "completed",
+      "duration_ms": 1200
+    },
+    {
+      "name": "key_derivation",
+      "status": "completed",
+      "duration_ms": 340
+    },
+    {
+      "name": "did_creation",
+      "status": "completed",
+      "duration_ms": 180
+    },
+    {
+      "name": "wallet_creation",
+      "status": "completed",
+      "duration_ms": 420
+    },
+    {
+      "name": "nucleus_init",
+      "status": "completed",
+      "duration_ms": 890
+    }
+  ],
+  "did": "did:halo:z6Mkdemo1234567890abcdef",
+  "evm_address": "0xDEMO000000000000000000000000000000000001"
+}

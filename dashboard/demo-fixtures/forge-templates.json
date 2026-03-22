@@ -1,0 +1,34 @@
+{
+  "templates": [
+    {
+      "id": "natural_language",
+      "name": "Natural Language",
+      "description": "Describe your theorem in English",
+      "icon": "pencil"
+    },
+    {
+      "id": "latex",
+      "name": "LaTeX Input",
+      "description": "Paste LaTeX formula",
+      "icon": "formula"
+    },
+    {
+      "id": "lean4_stub",
+      "name": "Lean 4 Stub",
+      "description": "Start with a Lean 4 sorry stub",
+      "icon": "code"
+    },
+    {
+      "id": "mathlib_search",
+      "name": "Mathlib Search",
+      "description": "Find and extend existing Mathlib lemmas",
+      "icon": "search"
+    },
+    {
+      "id": "paper_extract",
+      "name": "Paper Extract",
+      "description": "Extract theorem from academic paper",
+      "icon": "document"
+    }
+  ]
+}

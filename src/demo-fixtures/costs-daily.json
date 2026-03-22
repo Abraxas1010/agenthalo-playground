@@ -1,0 +1,212 @@
+[
+  {
+    "date": "2026-02-01",
+    "cost_usd": 0.8,
+    "sessions": 1,
+    "input_tokens": 12000,
+    "output_tokens": 3000
+  },
+  {
+    "date": "2026-02-02",
+    "cost_usd": 2.84,
+    "sessions": 2,
+    "input_tokens": 12500,
+    "output_tokens": 3200
+  },
+  {
+    "date": "2026-02-03",
+    "cost_usd": 1.28,
+    "sessions": 3,
+    "input_tokens": 13000,
+    "output_tokens": 3400
+  },
+  {
+    "date": "2026-02-04",
+    "cost_usd": 3.32,
+    "sessions": 1,
+    "input_tokens": 13500,
+    "output_tokens": 3600
+  },
+  {
+    "date": "2026-02-05",
+    "cost_usd": 1.76,
+    "sessions": 2,
+    "input_tokens": 14000,
+    "output_tokens": 3800
+  },
+  {
+    "date": "2026-02-06",
+    "cost_usd": 3.8,
+    "sessions": 3,
+    "input_tokens": 14500,
+    "output_tokens": 4000
+  },
+  {
+    "date": "2026-02-07",
+    "cost_usd": 2.24,
+    "sessions": 1,
+    "input_tokens": 15000,
+    "output_tokens": 4200
+  },
+  {
+    "date": "2026-02-08",
+    "cost_usd": 4.28,
+    "sessions": 2,
+    "input_tokens": 15500,
+    "output_tokens": 4400
+  },
+  {
+    "date": "2026-02-09",
+    "cost_usd": 2.72,
+    "sessions": 3,
+    "input_tokens": 16000,
+    "output_tokens": 4600
+  },
+  {
+    "date": "2026-02-10",
+    "cost_usd": 1.16,
+    "sessions": 1,
+    "input_tokens": 16500,
+    "output_tokens": 4800
+  },
+  {
+    "date": "2026-02-11",
+    "cost_usd": 3.2,
+    "sessions": 2,
+    "input_tokens": 17000,
+    "output_tokens": 5000
+  },
+  {
+    "date": "2026-02-12",
+    "cost_usd": 1.64,
+    "sessions": 3,
+    "input_tokens": 17500,
+    "output_tokens": 5200
+  },
+  {
+    "date": "2026-02-13",
+    "cost_usd": 3.68,
+    "sessions": 1,
+    "input_tokens": 18000,
+    "output_tokens": 5400
+  },
+  {
+    "date": "2026-02-14",
+    "cost_usd": 2.12,
+    "sessions": 2,
+    "input_tokens": 18500,
+    "output_tokens": 5600
+  },
+  {
+    "date": "2026-02-15",
+    "cost_usd": 4.16,
+    "sessions": 3,
+    "input_tokens": 19000,
+    "output_tokens": 5800
+  },
+  {
+    "date": "2026-02-16",
+    "cost_usd": 2.6,
+    "sessions": 1,
+    "input_tokens": 19500,
+    "output_tokens": 6000
+  },
+  {
+    "date": "2026-02-17",
+    "cost_usd": 1.04,
+    "sessions": 2,
+    "input_tokens": 20000,
+    "output_tokens": 6200
+  },
+  {
+    "date": "2026-02-18",
+    "cost_usd": 3.08,
+    "sessions": 3,
+    "input_tokens": 20500,
+    "output_tokens": 6400
+  },
+  {
+    "date": "2026-02-19",
+    "cost_usd": 1.52,
+    "sessions": 1,
+    "input_tokens": 21000,
+    "output_tokens": 6600
+  },
+  {
+    "date": "2026-02-20",
+    "cost_usd": 3.56,
+    "sessions": 2,
+    "input_tokens": 21500,
+    "output_tokens": 6800
+  },
+  {
+    "date": "2026-02-21",
+    "cost_usd": 2.0,
+    "sessions": 3,
+    "input_tokens": 22000,
+    "output_tokens": 7000
+  },
+  {
+    "date": "2026-02-22",
+    "cost_usd": 4.04,
+    "sessions": 1,
+    "input_tokens": 22500,
+    "output_tokens": 7200
+  },
+  {
+    "date": "2026-02-23",
+    "cost_usd": 2.48,
+    "sessions": 2,
+    "input_tokens": 23000,
+    "output_tokens": 7400
+  },
+  {
+    "date": "2026-02-24",
+    "cost_usd": 0.92,
+    "sessions": 3,
+    "input_tokens": 23500,
+    "output_tokens": 7600
+  },
+  {
+    "date": "2026-02-25",
+    "cost_usd": 2.96,
+    "sessions": 1,
+    "input_tokens": 24000,
+    "output_tokens": 7800
+  },
+  {
+    "date": "2026-02-26",
+    "cost_usd": 1.4,
+    "sessions": 2,
+    "input_tokens": 24500,
+    "output_tokens": 8000
+  },
+  {
+    "date": "2026-02-27",
+    "cost_usd": 3.44,
+    "sessions": 3,
+    "input_tokens": 25000,
+    "output_tokens": 8200
+  },
+  {
+    "date": "2026-02-28",
+    "cost_usd": 1.88,
+    "sessions": 1,
+    "input_tokens": 25500,
+    "output_tokens": 8400
+  },
+  {
+    "date": "2026-02-01",
+    "cost_usd": 3.92,
+    "sessions": 2,
+    "input_tokens": 26000,
+    "output_tokens": 8600
+  },
+  {
+    "date": "2026-02-02",
+    "cost_usd": 2.36,
+    "sessions": 3,
+    "input_tokens": 26500,
+    "output_tokens": 8800
+  }
+]

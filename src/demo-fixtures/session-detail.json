@@ -1,0 +1,411 @@
+{
+  "id": "sess_0e32adf0d134",
+  "agent_type": "claude",
+  "model": "claude-opus-4-6",
+  "status": "completed",
+  "started_at": "2026-03-15T10:00:00Z",
+  "ended_at": "2026-03-15T11:30:00Z",
+  "event_count": 50,
+  "events": [
+    {
+      "id": "evt_768afb481c17",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:00:00Z",
+      "agent": "claude",
+      "content_preview": "Event 0: thought operation",
+      "tokens": 50
+    },
+    {
+      "id": "evt_7b409f932d2c",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:01:00Z",
+      "agent": "claude",
+      "content_preview": "Event 1: tool_call operation",
+      "tokens": 87
+    },
+    {
+      "id": "evt_5a84cd4af0ce",
+      "type": "tool_result",
+      "timestamp": "2026-03-15T10:02:00Z",
+      "agent": "claude",
+      "content_preview": "Event 2: tool_result operation",
+      "tokens": 124
+    },
+    {
+      "id": "evt_4525ac95ad29",
+      "type": "file_edit",
+      "timestamp": "2026-03-15T10:03:00Z",
+      "agent": "claude",
+      "content_preview": "Event 3: file_edit operation",
+      "tokens": 161
+    },
+    {
+      "id": "evt_570ce92cabbb",
+      "type": "file_read",
+      "timestamp": "2026-03-15T10:04:00Z",
+      "agent": "claude",
+      "content_preview": "Event 4: file_read operation",
+      "tokens": 198
+    },
+    {
+      "id": "evt_8e6e791e8644",
+      "type": "shell_command",
+      "timestamp": "2026-03-15T10:05:00Z",
+      "agent": "claude",
+      "content_preview": "Event 5: shell_command operation",
+      "tokens": 235
+    },
+    {
+      "id": "evt_83ef6c3cba0f",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:06:00Z",
+      "agent": "claude",
+      "content_preview": "Event 6: thought operation",
+      "tokens": 272
+    },
+    {
+      "id": "evt_8aadb0b2674c",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:07:00Z",
+      "agent": "claude",
+      "content_preview": "Event 7: tool_call operation",
+      "tokens": 309
+    },
+    {
+      "id": "evt_fd9c3f7ba0dc",
+      "type": "tool_result",
+      "timestamp": "2026-03-15T10:08:00Z",
+      "agent": "claude",
+      "content_preview": "Event 8: tool_result operation",
+      "tokens": 346
+    },
+    {
+      "id": "evt_3c54b2774236",
+      "type": "file_edit",
+      "timestamp": "2026-03-15T10:09:00Z",
+      "agent": "claude",
+      "content_preview": "Event 9: file_edit operation",
+      "tokens": 83
+    },
+    {
+      "id": "evt_b5342d512937",
+      "type": "file_read",
+      "timestamp": "2026-03-15T10:10:00Z",
+      "agent": "claude",
+      "content_preview": "Event 10: file_read operation",
+      "tokens": 120
+    },
+    {
+      "id": "evt_f18335a9080d",
+      "type": "shell_command",
+      "timestamp": "2026-03-15T10:11:00Z",
+      "agent": "claude",
+      "content_preview": "Event 11: shell_command operation",
+      "tokens": 157
+    },
+    {
+      "id": "evt_00f1f8d616be",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:12:00Z",
+      "agent": "claude",
+      "content_preview": "Event 12: thought operation",
+      "tokens": 194
+    },
+    {
+      "id": "evt_9f291e07bff6",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:13:00Z",
+      "agent": "claude",
+      "content_preview": "Event 13: tool_call operation",
+      "tokens": 231
+    },
+    {
+      "id": "evt_175608bc0a72",
+      "type": "tool_result",
+      "timestamp": "2026-03-15T10:14:00Z",
+      "agent": "claude",
+      "content_preview": "Event 14: tool_result operation",
+      "tokens": 268
+    },
+    {
+      "id": "evt_fe3b1406cd11",
+      "type": "file_edit",
+      "timestamp": "2026-03-15T10:15:00Z",
+      "agent": "claude",
+      "content_preview": "Event 15: file_edit operation",
+      "tokens": 305
+    },
+    {
+      "id": "evt_6a9a8af03dc1",
+      "type": "file_read",
+      "timestamp": "2026-03-15T10:16:00Z",
+      "agent": "claude",
+      "content_preview": "Event 16: file_read operation",
+      "tokens": 342
+    },
+    {
+      "id": "evt_31a75e4b8f5b",
+      "type": "shell_command",
+      "timestamp": "2026-03-15T10:17:00Z",
+      "agent": "claude",
+      "content_preview": "Event 17: shell_command operation",
+      "tokens": 79
+    },
+    {
+      "id": "evt_115bea9a6ae1",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:18:00Z",
+      "agent": "claude",
+      "content_preview": "Event 18: thought operation",
+      "tokens": 116
+    },
+    {
+      "id": "evt_c01da23a084b",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:19:00Z",
+      "agent": "claude",
+      "content_preview": "Event 19: tool_call operation",
+      "tokens": 153
+    },
+    {
+      "id": "evt_ef692878b8b6",
+      "type": "tool_result",
+      "timestamp": "2026-03-15T10:20:00Z",
+      "agent": "claude",
+      "content_preview": "Event 20: tool_result operation",
+      "tokens": 190
+    },
+    {
+      "id": "evt_3d323dd06a41",
+      "type": "file_edit",
+      "timestamp": "2026-03-15T10:21:00Z",
+      "agent": "claude",
+      "content_preview": "Event 21: file_edit operation",
+      "tokens": 227
+    },
+    {
+      "id": "evt_3305cddc23a3",
+      "type": "file_read",
+      "timestamp": "2026-03-15T10:22:00Z",
+      "agent": "claude",
+      "content_preview": "Event 22: file_read operation",
+      "tokens": 264
+    },
+    {
+      "id": "evt_fb34f90088ac",
+      "type": "shell_command",
+      "timestamp": "2026-03-15T10:23:00Z",
+      "agent": "claude",
+      "content_preview": "Event 23: shell_command operation",
+      "tokens": 301
+    },
+    {
+      "id": "evt_97d12b75c58b",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:24:00Z",
+      "agent": "claude",
+      "content_preview": "Event 24: thought operation",
+      "tokens": 338
+    },
+    {
+      "id": "evt_fdc9206cb30e",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:25:00Z",
+      "agent": "claude",
+      "content_preview": "Event 25: tool_call operation",
+      "tokens": 75
+    },
+    {
+      "id": "evt_a379fd16ab4d",
+      "type": "tool_result",
+      "timestamp": "2026-03-15T10:26:00Z",
+      "agent": "claude",
+      "content_preview": "Event 26: tool_result operation",
+      "tokens": 112
+    },
+    {
+      "id": "evt_1ec424e2a486",
+      "type": "file_edit",
+      "timestamp": "2026-03-15T10:27:00Z",
+      "agent": "claude",
+      "content_preview": "Event 27: file_edit operation",
+      "tokens": 149
+    },
+    {
+      "id": "evt_355363aed484",
+      "type": "file_read",
+      "timestamp": "2026-03-15T10:28:00Z",
+      "agent": "claude",
+      "content_preview": "Event 28: file_read operation",
+      "tokens": 186
+    },
+    {
+      "id": "evt_9f01210b2b9d",
+      "type": "shell_command",
+      "timestamp": "2026-03-15T10:29:00Z",
+      "agent": "claude",
+      "content_preview": "Event 29: shell_command operation",
+      "tokens": 223
+    },
+    {
+      "id": "evt_c39e890cbb44",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:30:00Z",
+      "agent": "claude",
+      "content_preview": "Event 30: thought operation",
+      "tokens": 260
+    },
+    {
+      "id": "evt_3063acac927e",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:31:00Z",
+      "agent": "claude",
+      "content_preview": "Event 31: tool_call operation",
+      "tokens": 297
+    },
+    {
+      "id": "evt_551a64dc8c9d",
+      "type": "tool_result",
+      "timestamp": "2026-03-15T10:32:00Z",
+      "agent": "claude",
+      "content_preview": "Event 32: tool_result operation",
+      "tokens": 334
+    },
+    {
+      "id": "evt_dfe7a2585668",
+      "type": "file_edit",
+      "timestamp": "2026-03-15T10:33:00Z",
+      "agent": "claude",
+      "content_preview": "Event 33: file_edit operation",
+      "tokens": 71
+    },
+    {
+      "id": "evt_4718ef7f5c1f",
+      "type": "file_read",
+      "timestamp": "2026-03-15T10:34:00Z",
+      "agent": "claude",
+      "content_preview": "Event 34: file_read operation",
+      "tokens": 108
+    },
+    {
+      "id": "evt_78e78c55e1d4",
+      "type": "shell_command",
+      "timestamp": "2026-03-15T10:35:00Z",
+      "agent": "claude",
+      "content_preview": "Event 35: shell_command operation",
+      "tokens": 145
+    },
+    {
+      "id": "evt_5e52d3ad49b2",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:36:00Z",
+      "agent": "claude",
+      "content_preview": "Event 36: thought operation",
+      "tokens": 182
+    },
+    {
+      "id": "evt_95c8c071a9ed",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:37:00Z",
+      "agent": "claude",
+      "content_preview": "Event 37: tool_call operation",
+      "tokens": 219
+    },
+    {
+      "id": "evt_7c256cae337c",
+      "type": "tool_result",
+      "timestamp": "2026-03-15T10:38:00Z",
+      "agent": "claude",
+      "content_preview": "Event 38: tool_result operation",
+      "tokens": 256
+    },
+    {
+      "id": "evt_a59ee3f5eb89",
+      "type": "file_edit",
+      "timestamp": "2026-03-15T10:39:00Z",
+      "agent": "claude",
+      "content_preview": "Event 39: file_edit operation",
+      "tokens": 293
+    },
+    {
+      "id": "evt_a53b6f38b7e9",
+      "type": "file_read",
+      "timestamp": "2026-03-15T10:40:00Z",
+      "agent": "claude",
+      "content_preview": "Event 40: file_read operation",
+      "tokens": 330
+    },
+    {
+      "id": "evt_d796e16b6f90",
+      "type": "shell_command",
+      "timestamp": "2026-03-15T10:41:00Z",
+      "agent": "claude",
+      "content_preview": "Event 41: shell_command operation",
+      "tokens": 67
+    },
+    {
+      "id": "evt_ed368bee2040",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:42:00Z",
+      "agent": "claude",
+      "content_preview": "Event 42: thought operation",
+      "tokens": 104
+    },
+    {
+      "id": "evt_46f8cf894e3b",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:43:00Z",
+      "agent": "claude",
+      "content_preview": "Event 43: tool_call operation",
+      "tokens": 141
+    },
+    {
+      "id": "evt_b8c7564e209b",
+      "type": "tool_result",
+      "timestamp": "2026-03-15T10:44:00Z",
+      "agent": "claude",
+      "content_preview": "Event 44: tool_result operation",
+      "tokens": 178
+    },
+    {
+      "id": "evt_26c2fd1ba2e1",
+      "type": "file_edit",
+      "timestamp": "2026-03-15T10:45:00Z",
+      "agent": "claude",
+      "content_preview": "Event 45: file_edit operation",
+      "tokens": 215
+    },
+    {
+      "id": "evt_459b2079bef7",
+      "type": "file_read",
+      "timestamp": "2026-03-15T10:46:00Z",
+      "agent": "claude",
+      "content_preview": "Event 46: file_read operation",
+      "tokens": 252
+    },
+    {
+      "id": "evt_0a78c5c67c00",
+      "type": "shell_command",
+      "timestamp": "2026-03-15T10:47:00Z",
+      "agent": "claude",
+      "content_preview": "Event 47: shell_command operation",
+      "tokens": 289
+    },
+    {
+      "id": "evt_38c33d9253a4",
+      "type": "thought",
+      "timestamp": "2026-03-15T10:48:00Z",
+      "agent": "claude",
+      "content_preview": "Event 48: thought operation",
+      "tokens": 326
+    },
+    {
+      "id": "evt_f4627221fdd2",
+      "type": "tool_call",
+      "timestamp": "2026-03-15T10:49:00Z",
+      "agent": "claude",
+      "content_preview": "Event 49: tool_call operation",
+      "tokens": 63
+    }
+  ]
+}

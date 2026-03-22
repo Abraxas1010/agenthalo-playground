@@ -1,0 +1,29 @@
+{
+  "segments": [
+    {
+      "label": "Prove",
+      "weight": 0.35,
+      "color": "#35ff3e"
+    },
+    {
+      "label": "Review",
+      "weight": 0.25,
+      "color": "#ff6a00"
+    },
+    {
+      "label": "Search",
+      "weight": 0.2,
+      "color": "#4ba3ff"
+    },
+    {
+      "label": "Translate",
+      "weight": 0.12,
+      "color": "#c49bff"
+    },
+    {
+      "label": "Mentor",
+      "weight": 0.08,
+      "color": "#ff9f2a"
+    }
+  ]
+}

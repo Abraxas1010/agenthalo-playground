@@ -1,0 +1,92 @@
+name: Deploy to Webapp
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dashboard/**'
+      - 'src/**'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-webapp
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout playground
+        uses: actions/checkout@v4
+
+      # --- Hook Gate 1: Validate dashboard output exists and is complete ---
+      - name: Gate - Validate dashboard output
+        run: |
+          test -f dashboard/index.html     || { echo "GATE FAIL: dashboard/index.html missing"; exit 1; }
+          test -f dashboard/app.js         || { echo "GATE FAIL: dashboard/app.js missing"; exit 1; }
+          test -f dashboard/demo-api.js    || { echo "GATE FAIL: dashboard/demo-api.js missing"; exit 1; }
+          test -f dashboard/demo-banner.js || { echo "GATE FAIL: dashboard/demo-banner.js missing"; exit 1; }
+          test -d dashboard/demo-fixtures  || { echo "GATE FAIL: dashboard/demo-fixtures/ missing"; exit 1; }
+          test -d dashboard/vendor         || { echo "GATE FAIL: dashboard/vendor/ missing"; exit 1; }
+
+          # Verify demo-api.js injection order
+          DEMO_LINE=$(grep -n 'demo-api.js' dashboard/index.html | head -1 | cut -d: -f1)
+          APP_LINE=$(grep -n 'src="app.js"' dashboard/index.html | head -1 | cut -d: -f1)
+          test "$DEMO_LINE" -lt "$APP_LINE" || { echo "GATE FAIL: demo-api.js must precede app.js"; exit 1; }
+
+          FIXTURE_COUNT=$(find dashboard/demo-fixtures -name '*.json' | wc -l)
+          test "$FIXTURE_COUNT" -ge 30 || { echo "GATE FAIL: expected >=30 fixtures, found $FIXTURE_COUNT"; exit 1; }
+
+          echo "Gate 1 PASS: dashboard validated ($FIXTURE_COUNT fixtures)"
+
+      # --- Hook Gate 2: Size sanity check ---
+      - name: Gate - Bundle size check
+        run: |
+          SIZE_KB=$(du -sk dashboard/ | cut -f1)
+          SIZE_MB=$((SIZE_KB / 1024))
+          echo "Dashboard size: ${SIZE_MB}MB"
+          test "$SIZE_MB" -lt 100 || { echo "GATE FAIL: bundle too large (${SIZE_MB}MB > 100MB limit)"; exit 1; }
+          echo "Gate 2 PASS: size OK (${SIZE_MB}MB)"
+
+      - name: Checkout webapp
+        uses: actions/checkout@v4
+        with:
+          repository: Apoth3osis-ai/apoth3osis_webapp
+          token: ${{ secrets.WEBAPP_SYNC_PAT }}
+          path: webapp
+
+      # --- Hook Gate 3: Validate webapp has integration files ---
+      - name: Gate - Validate webapp integration
+        run: |
+          test -f webapp/src/app/agenthalo/demo/page.tsx || echo "WARNING: demo page.tsx not yet created in webapp (first deploy)"
+          test -f webapp/src/components/AgentHaloDemoEmbed.tsx || echo "WARNING: embed component not yet created in webapp (first deploy)"
+          echo "Gate 3 PASS: webapp checkout OK"
+
+      - name: Sync to webapp
+        run: |
+          rm -rf webapp/public/agenthalo-demo
+          cp -r dashboard webapp/public/agenthalo-demo
+
+      # --- Hook Gate 4: Verify the sync produced valid output ---
+      - name: Gate - Verify webapp output
+        run: |
+          test -f webapp/public/agenthalo-demo/index.html || { echo "GATE FAIL: sync did not produce index.html"; exit 1; }
+          test -f webapp/public/agenthalo-demo/demo-api.js || { echo "GATE FAIL: sync did not produce demo-api.js"; exit 1; }
+          grep -q 'demo-api.js' webapp/public/agenthalo-demo/index.html || { echo "GATE FAIL: demo-api.js not injected in index.html"; exit 1; }
+          echo "Gate 4 PASS: webapp output verified"
+
+      - name: Commit and push
+        working-directory: webapp
+        run: |
+          git config user.name "agenthalo-sync[bot]"
+          git config user.email "sync@apoth3osis.ai"
+          git add public/agenthalo-demo/
+          if git diff --cached --quiet; then
+            echo "No changes to deploy"
+            exit 0
+          fi
+          PG_SHA=$(git -C .. rev-parse --short HEAD)
+          git commit -m "chore: update AgentHALO playground demo
+
+          Synced from agenthalo-playground@${PG_SHA}"
+          git push

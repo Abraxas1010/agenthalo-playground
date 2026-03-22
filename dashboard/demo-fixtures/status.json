@@ -1,0 +1,18 @@
+{
+  "version": "0.3.0",
+  "uptime_secs": 604800,
+  "demo_mode": true,
+  "session_count": 12,
+  "active_sessions": 1,
+  "total_events": 3247,
+  "total_cost_usd": 42.87,
+  "trust_score": 0.94,
+  "proof_gate_surfaces": 6,
+  "proof_gate_requirements_met": 14,
+  "nucleusdb_tables": 5,
+  "nucleusdb_rows": 892,
+  "mcp_tool_count": 128,
+  "agents_registered": 3,
+  "crypto_status": "unlocked",
+  "governor_status": "nominal"
+}

@@ -1,0 +1,43 @@
+{
+  "sessions": [
+    {
+      "id": "pty_876539cc2ee0",
+      "agent_type": "claude",
+      "command": "/usr/bin/claude-cli",
+      "status": {
+        "state": "active",
+        "exit_code": null
+      },
+      "ws_url": "/api/cockpit/sessions/pty_876539cc2ee0/ws",
+      "started_at": "2026-03-21T10:00:00Z",
+      "cols": 120,
+      "rows": 36
+    },
+    {
+      "id": "pty_a4f3d7740d56",
+      "agent_type": "codex",
+      "command": "/usr/bin/codex-cli",
+      "status": {
+        "state": "active",
+        "exit_code": null
+      },
+      "ws_url": "/api/cockpit/sessions/pty_a4f3d7740d56/ws",
+      "started_at": "2026-03-21T11:00:00Z",
+      "cols": 120,
+      "rows": 36
+    },
+    {
+      "id": "pty_57f30e12d329",
+      "agent_type": "gemini",
+      "command": "/usr/bin/gemini-cli",
+      "status": {
+        "state": "done",
+        "exit_code": 0
+      },
+      "ws_url": "/api/cockpit/sessions/pty_57f30e12d329/ws",
+      "started_at": "2026-03-21T12:00:00Z",
+      "cols": 120,
+      "rows": 36
+    }
+  ]
+}

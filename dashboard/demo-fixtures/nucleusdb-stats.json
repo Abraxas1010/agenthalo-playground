@@ -1,0 +1,26 @@
+{
+  "tables": {
+    "sessions": {
+      "rows": 12,
+      "size_mb": 0.8
+    },
+    "events": {
+      "rows": 640,
+      "size_mb": 8.4
+    },
+    "attestations": {
+      "rows": 48,
+      "size_mb": 1.2
+    },
+    "proofs": {
+      "rows": 22,
+      "size_mb": 2.1
+    },
+    "memories": {
+      "rows": 170,
+      "size_mb": 1.7
+    }
+  },
+  "total_rows": 892,
+  "total_size_mb": 14.2
+}

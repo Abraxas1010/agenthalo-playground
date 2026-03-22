@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.wasm
+.DS_Store
+target/
+pkg/
+__pycache__/
+*.pyc

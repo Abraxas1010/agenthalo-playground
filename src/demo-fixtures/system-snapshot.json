@@ -1,0 +1,9 @@
+{
+  "cpu_percent": 12.4,
+  "memory_used_mb": 384,
+  "memory_total_mb": 16384,
+  "disk_used_gb": 2.1,
+  "disk_total_gb": 500,
+  "process_count": 4,
+  "uptime_secs": 604800
+}

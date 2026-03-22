@@ -1,0 +1,3505 @@
+{
+  "declarations": [
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm",
+      "kind": "theorem",
+      "type": "a + b = b + a",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c)",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add",
+      "kind": "theorem",
+      "type": "0 + a = a",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul",
+      "kind": "theorem",
+      "type": "1 * a = a",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel",
+      "kind": "theorem",
+      "type": "-a + a = 0",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid",
+      "kind": "structure",
+      "type": "class Monoid (M : Type)",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group",
+      "kind": "structure",
+      "type": "class Group (G : Type)",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring",
+      "kind": "structure",
+      "type": "class Ring (R : Type)",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type)",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category)",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_10",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 10",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_10 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_11",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 11",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_11 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_12",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 12",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_12 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_13",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 13",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_13 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_14",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 14",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_14 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_15",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 15",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_15 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_16",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 16",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_16 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_17",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 17",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_17 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_18",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 18",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_18 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_19",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 19",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_19 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_20",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 20",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_20 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_21",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 21",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_21 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_22",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 22",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_22 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_23",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 23",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_23 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_24",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 24",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_24 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_25",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 25",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_25 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_26",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 26",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_26 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_27",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 27",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_27 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_28",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 28",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_28 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_29",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 29",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_29 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_30",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 30",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_30 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_31",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 31",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_31 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_32",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 32",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_32 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_33",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 33",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_33 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_34",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 34",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_34 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_35",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 35",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_35 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_36",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 36",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_36 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_37",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 37",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_37 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_38",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 38",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_38 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_39",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 39",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_39 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_40",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 40",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_40 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_41",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 41",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_41 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_42",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 42",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_42 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_43",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 43",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_43 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_44",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 44",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_44 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_45",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 45",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_45 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_46",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 46",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_46 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_47",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 47",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_47 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_48",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 48",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_48 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_49",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 49",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_49 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_50",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 50",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_50 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_51",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 51",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_51 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_52",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 52",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_52 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_53",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 53",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_53 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_54",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 54",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_54 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_55",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 55",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_55 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_56",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 56",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_56 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_57",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 57",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_57 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_58",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 58",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_58 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_59",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 59",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_59 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_60",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 60",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_60 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_61",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 61",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_61 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_62",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 62",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_62 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_63",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 63",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_63 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_64",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 64",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_64 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_65",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 65",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_65 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_66",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 66",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_66 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_67",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 67",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_67 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_68",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 68",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_68 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_69",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 69",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_69 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_70",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 70",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_70 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_71",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 71",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_71 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_72",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 72",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_72 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_73",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 73",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_73 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_74",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 74",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_74 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_75",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 75",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_75 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_76",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 76",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_76 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_77",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 77",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_77 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_78",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 78",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_78 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_79",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 79",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_79 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_80",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 80",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_80 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_81",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 81",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_81 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_82",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 82",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_82 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_83",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 83",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_83 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_84",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 84",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_84 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_85",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 85",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_85 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_86",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 86",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_86 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_87",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 87",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_87 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_88",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 88",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_88 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_89",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 89",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_89 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_90",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 90",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_90 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_91",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 91",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_91 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_92",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 92",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_92 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_93",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 93",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_93 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_94",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 94",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_94 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_95",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 95",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_95 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_96",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 96",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_96 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_97",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 97",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_97 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_98",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 98",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_98 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_99",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 99",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_99 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_100",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 100",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_100 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_101",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 101",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_101 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_102",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 102",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_102 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_103",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 103",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_103 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_104",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 104",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_104 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_105",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 105",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_105 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_106",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 106",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_106 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_107",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 107",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_107 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_108",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 108",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_108 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_109",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 109",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_109 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_110",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 110",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_110 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_111",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 111",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_111 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_112",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 112",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_112 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_113",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 113",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_113 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_114",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 114",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_114 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_115",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 115",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_115 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_116",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 116",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_116 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_117",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 117",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_117 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_118",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 118",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_118 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_119",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 119",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_119 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_120",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 120",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_120 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_121",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 121",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_121 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_122",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 122",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_122 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_123",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 123",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_123 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_124",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 124",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_124 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_125",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 125",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_125 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_126",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 126",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_126 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_127",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 127",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_127 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_128",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 128",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_128 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_129",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 129",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_129 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_130",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 130",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_130 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_131",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 131",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_131 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_132",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 132",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_132 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_133",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 133",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_133 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_134",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 134",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_134 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_135",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 135",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_135 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_136",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 136",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_136 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_137",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 137",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_137 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_138",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 138",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_138 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_139",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 139",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_139 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_140",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 140",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_140 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_141",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 141",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_141 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_142",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 142",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_142 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_143",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 143",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_143 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_144",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 144",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_144 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_145",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 145",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_145 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_146",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 146",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_146 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_147",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 147",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_147 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_148",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 148",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_148 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_149",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 149",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_149 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_150",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 150",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_150 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_151",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 151",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_151 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_152",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 152",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_152 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_153",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 153",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_153 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_154",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 154",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_154 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_155",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 155",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_155 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_156",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 156",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_156 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_157",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 157",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_157 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_158",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 158",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_158 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_159",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 159",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_159 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_160",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 160",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_160 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_161",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 161",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_161 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_162",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 162",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_162 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_163",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 163",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_163 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_164",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 164",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_164 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_165",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 165",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_165 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_166",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 166",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_166 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_167",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 167",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_167 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_168",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 168",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_168 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_169",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 169",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_169 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_170",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 170",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_170 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_171",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 171",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_171 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_172",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 172",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_172 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_173",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 173",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_173 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_174",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 174",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_174 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_175",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 175",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_175 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_176",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 176",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_176 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_177",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 177",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_177 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_178",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 178",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_178 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_179",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 179",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_179 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_180",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 180",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_180 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_181",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 181",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_181 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_182",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 182",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_182 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_183",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 183",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_183 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_184",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 184",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_184 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_185",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 185",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_185 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_186",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 186",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_186 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_187",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 187",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_187 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_188",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 188",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_188 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_189",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 189",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_189 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_190",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 190",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_190 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_191",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 191",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_191 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_192",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 192",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_192 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_193",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 193",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_193 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_194",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 194",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_194 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_195",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 195",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_195 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_196",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 196",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_196 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_197",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 197",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_197 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_198",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 198",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_198 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_199",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 199",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_199 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_200",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 200",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_200 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_201",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 201",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_201 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_202",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 202",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_202 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_203",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 203",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_203 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_204",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 204",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_204 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_205",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 205",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_205 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_206",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 206",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_206 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_207",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 207",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_207 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_208",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 208",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_208 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_209",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 209",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_209 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_210",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 210",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_210 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_211",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 211",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_211 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_212",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 212",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_212 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_213",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 213",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_213 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_214",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 214",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_214 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_215",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 215",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_215 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_216",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 216",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_216 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_217",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 217",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_217 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_218",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 218",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_218 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_219",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 219",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_219 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_220",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 220",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_220 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_221",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 221",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_221 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_222",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 222",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_222 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_223",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 223",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_223 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_224",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 224",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_224 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_225",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 225",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_225 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_226",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 226",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_226 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_227",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 227",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_227 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_228",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 228",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_228 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_229",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 229",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_229 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_230",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 230",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_230 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_231",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 231",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_231 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_232",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 232",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_232 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_233",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 233",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_233 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_234",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 234",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_234 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_235",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 235",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_235 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_236",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 236",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_236 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_237",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 237",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_237 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_238",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 238",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_238 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_239",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 239",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_239 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_240",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 240",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_240 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_241",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 241",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_241 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_242",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 242",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_242 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_243",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 243",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_243 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_244",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 244",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_244 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_245",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 245",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_245 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_246",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 246",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_246 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_247",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 247",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_247 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_248",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 248",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_248 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_249",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 249",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_249 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_250",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 250",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_250 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_251",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 251",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_251 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_252",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 252",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_252 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_253",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 253",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_253 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_254",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 254",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_254 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_255",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 255",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_255 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_256",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 256",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_256 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_257",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 257",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_257 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_258",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 258",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_258 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_259",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 259",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_259 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_260",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 260",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_260 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_261",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 261",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_261 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_262",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 262",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_262 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_263",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 263",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_263 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_264",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 264",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_264 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_265",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 265",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_265 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_266",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 266",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_266 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_267",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 267",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_267 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_268",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 268",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_268 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_269",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 269",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_269 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_270",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 270",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_270 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_271",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 271",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_271 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_272",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 272",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_272 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_273",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 273",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_273 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_274",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 274",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_274 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_275",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 275",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_275 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_276",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 276",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_276 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_277",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 277",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_277 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_278",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 278",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_278 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_279",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 279",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_279 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_280",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 280",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_280 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_281",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 281",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_281 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_282",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 282",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_282 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_283",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 283",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_283 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_284",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 284",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_284 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_285",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 285",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_285 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_286",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 286",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_286 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_287",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 287",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_287 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_288",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 288",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_288 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_289",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 289",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_289 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_290",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 290",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_290 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_291",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 291",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_291 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_292",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 292",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_292 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_293",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 293",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_293 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_294",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 294",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_294 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_295",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 295",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_295 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_296",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 296",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_296 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_297",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 297",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_297 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_298",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 298",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_298 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_299",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 299",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_299 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_300",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 300",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_300 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_301",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 301",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_301 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_302",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 302",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_302 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_303",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 303",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_303 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_304",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 304",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_304 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_305",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 305",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_305 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_306",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 306",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_306 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_307",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 307",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_307 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_308",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 308",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_308 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_309",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 309",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_309 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_310",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 310",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_310 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_311",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 311",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_311 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_312",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 312",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_312 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_313",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 313",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_313 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_314",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 314",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_314 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_315",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 315",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_315 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_316",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 316",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_316 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_317",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 317",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_317 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_318",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 318",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_318 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_319",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 319",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_319 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_320",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 320",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_320 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_321",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 321",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_321 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_322",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 322",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_322 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_323",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 323",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_323 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_324",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 324",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_324 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_325",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 325",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_325 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_326",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 326",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_326 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_327",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 327",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_327 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_328",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 328",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_328 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_329",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 329",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_329 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_330",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 330",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_330 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_331",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 331",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_331 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_332",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 332",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_332 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_333",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 333",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_333 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_334",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 334",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_334 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_335",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 335",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_335 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_336",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 336",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_336 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_337",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 337",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_337 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_338",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 338",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_338 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_339",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 339",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_339 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_340",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 340",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_340 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_341",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 341",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_341 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_342",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 342",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_342 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_343",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 343",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_343 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_344",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 344",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_344 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_345",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 345",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_345 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_346",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 346",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_346 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_347",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 347",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_347 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_348",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 348",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_348 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_349",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 349",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_349 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_350",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 350",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_350 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_351",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 351",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_351 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_352",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 352",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_352 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_353",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 353",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_353 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_354",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 354",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_354 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_355",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 355",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_355 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_356",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 356",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_356 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_357",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 357",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_357 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_358",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 358",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_358 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_359",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 359",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_359 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_360",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 360",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_360 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_361",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 361",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_361 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_362",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 362",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_362 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_363",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 363",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_363 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_364",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 364",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_364 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_365",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 365",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_365 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_366",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 366",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_366 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_367",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 367",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_367 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_368",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 368",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_368 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_369",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 369",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_369 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_370",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 370",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_370 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_371",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 371",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_371 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_372",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 372",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_372 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_373",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 373",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_373 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_374",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 374",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_374 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_375",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 375",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_375 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_376",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 376",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_376 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_377",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 377",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_377 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_378",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 378",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_378 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_379",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 379",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_379 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_380",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 380",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_380 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_381",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 381",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_381 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_382",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 382",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_382 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_383",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 383",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_383 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_384",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 384",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_384 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_385",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 385",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_385 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_386",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 386",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_386 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_387",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 387",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_387 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_388",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 388",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_388 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_389",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 389",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_389 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_390",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 390",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_390 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_391",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 391",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_391 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_392",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 392",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_392 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_393",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 393",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_393 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_394",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 394",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_394 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_395",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 395",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_395 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_396",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 396",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_396 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_397",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 397",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_397 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_398",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 398",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_398 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_399",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 399",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_399 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_400",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 400",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_400 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_401",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 401",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_401 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_402",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 402",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_402 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_403",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 403",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_403 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_404",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 404",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_404 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_405",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 405",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_405 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_406",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 406",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_406 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_407",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 407",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_407 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_408",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 408",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_408 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_409",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 409",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_409 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_410",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 410",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_410 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_411",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 411",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_411 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_412",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 412",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_412 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_413",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 413",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_413 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_414",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 414",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_414 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_415",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 415",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_415 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_416",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 416",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_416 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_417",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 417",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_417 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_418",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 418",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_418 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_419",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 419",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_419 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_420",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 420",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_420 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_421",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 421",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_421 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_422",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 422",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_422 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_423",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 423",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_423 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_424",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 424",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_424 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_425",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 425",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_425 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_426",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 426",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_426 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_427",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 427",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_427 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_428",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 428",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_428 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_429",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 429",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_429 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_430",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 430",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_430 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_431",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 431",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_431 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_432",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 432",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_432 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_433",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 433",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_433 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_434",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 434",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_434 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_435",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 435",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_435 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_436",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 436",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_436 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_437",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 437",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_437 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_438",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 438",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_438 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_439",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 439",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_439 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_440",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 440",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_440 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_441",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 441",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_441 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_442",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 442",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_442 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_443",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 443",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_443 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_444",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 444",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_444 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_445",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 445",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_445 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_446",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 446",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_446 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_447",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 447",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_447 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_448",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 448",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_448 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_449",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 449",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_449 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_450",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 450",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_450 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_451",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 451",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_451 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_452",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 452",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_452 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_453",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 453",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_453 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_454",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 454",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_454 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_455",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 455",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_455 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_456",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 456",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_456 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_457",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 457",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_457 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_458",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 458",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_458 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_459",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 459",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_459 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_460",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 460",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_460 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_461",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 461",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_461 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_462",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 462",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_462 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_463",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 463",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_463 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_464",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 464",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_464 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_465",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 465",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_465 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_466",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 466",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_466 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_467",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 467",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_467 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_468",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 468",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_468 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_469",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 469",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_469 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_470",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 470",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_470 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_471",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 471",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_471 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_472",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 472",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_472 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_473",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 473",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_473 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_474",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 474",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_474 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_475",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 475",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_475 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_476",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 476",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_476 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_477",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 477",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_477 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_478",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 478",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_478 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_479",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 479",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_479 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_480",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 480",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_480 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_481",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 481",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_481 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_482",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 482",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_482 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_483",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 483",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_483 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_484",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 484",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_484 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_485",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 485",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_485 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_486",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 486",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_486 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_487",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 487",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_487 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_488",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 488",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_488 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_489",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 489",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_489 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Group.Basic.add_comm_490",
+      "kind": "theorem",
+      "type": "a + b = b + a -- variant 490",
+      "module": "Mathlib.Algebra.Group.Basic",
+      "doc": "Declaration add_comm_490 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Ring.Basic.mul_assoc_491",
+      "kind": "theorem",
+      "type": "(a * b) * c = a * (b * c) -- variant 491",
+      "module": "Mathlib.Algebra.Ring.Basic",
+      "doc": "Declaration mul_assoc_491 from Basic"
+    },
+    {
+      "name": "Mathlib.Algebra.Order.Ring.Defs.zero_add_492",
+      "kind": "theorem",
+      "type": "0 + a = a -- variant 492",
+      "module": "Mathlib.Algebra.Order.Ring.Defs",
+      "doc": "Declaration zero_add_492 from Defs"
+    },
+    {
+      "name": "Mathlib.Topology.Basic.one_mul_493",
+      "kind": "theorem",
+      "type": "1 * a = a -- variant 493",
+      "module": "Mathlib.Topology.Basic",
+      "doc": "Declaration one_mul_493 from Basic"
+    },
+    {
+      "name": "Mathlib.Topology.MetricSpace.Basic.neg_add_cancel_494",
+      "kind": "theorem",
+      "type": "-a + a = 0 -- variant 494",
+      "module": "Mathlib.Topology.MetricSpace.Basic",
+      "doc": "Declaration neg_add_cancel_494 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.Functor.Basic.Monoid_495",
+      "kind": "structure",
+      "type": "class Monoid (M : Type) -- variant 495",
+      "module": "Mathlib.CategoryTheory.Functor.Basic",
+      "doc": "Declaration Monoid_495 from Basic"
+    },
+    {
+      "name": "Mathlib.CategoryTheory.NatTrans.Group_496",
+      "kind": "structure",
+      "type": "class Group (G : Type) -- variant 496",
+      "module": "Mathlib.CategoryTheory.NatTrans",
+      "doc": "Declaration Group_496 from NatTrans"
+    },
+    {
+      "name": "Mathlib.Analysis.NormedSpace.Basic.Ring_497",
+      "kind": "structure",
+      "type": "class Ring (R : Type) -- variant 497",
+      "module": "Mathlib.Analysis.NormedSpace.Basic",
+      "doc": "Declaration Ring_497 from Basic"
+    },
+    {
+      "name": "Mathlib.LinearAlgebra.Basic.TopologicalSpace_498",
+      "kind": "structure",
+      "type": "class TopologicalSpace (X : Type) -- variant 498",
+      "module": "Mathlib.LinearAlgebra.Basic",
+      "doc": "Declaration TopologicalSpace_498 from Basic"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Basic.Functor_499",
+      "kind": "structure",
+      "type": "structure Functor (C D : Category) -- variant 499",
+      "module": "Mathlib.Data.Nat.Basic",
+      "doc": "Declaration Functor_499 from Basic"
+    }
+  ],
+  "total": 500
+}

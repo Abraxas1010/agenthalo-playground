@@ -1,0 +1,35 @@
+{
+  "total_calls": 847,
+  "unique_tools_used": 43,
+  "top_tools": [
+    {
+      "name": "heyting_prove_assist",
+      "calls": 124
+    },
+    {
+      "name": "heyting_search",
+      "calls": 98
+    },
+    {
+      "name": "heyting_try_tactic",
+      "calls": 76
+    },
+    {
+      "name": "heyting_lean_check",
+      "calls": 65
+    },
+    {
+      "name": "heyting_typecheck_snippet",
+      "calls": 52
+    }
+  ],
+  "calls_by_category": {
+    "atp": 312,
+    "search": 198,
+    "lean": 142,
+    "translate": 87,
+    "infra": 54,
+    "overlay": 32,
+    "data": 22
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "mode": "advisory",
+  "surfaces": [
+    {
+      "surface": "execute_sql",
+      "requirements": 3,
+      "met": 3,
+      "status": "enforced"
+    },
+    {
+      "surface": "container_launch",
+      "requirements": 2,
+      "met": 2,
+      "status": "enforced"
+    },
+    {
+      "surface": "commit",
+      "requirements": 3,
+      "met": 3,
+      "status": "enforced"
+    },
+    {
+      "surface": "evm_sign",
+      "requirements": 2,
+      "met": 2,
+      "status": "enforced"
+    },
+    {
+      "surface": "kem_encapsulate",
+      "requirements": 1,
+      "met": 1,
+      "status": "enforced"
+    },
+    {
+      "surface": "trace_analysis",
+      "requirements": 3,
+      "met": 3,
+      "status": "enforced"
+    }
+  ],
+  "total_requirements": 14,
+  "total_met": 14,
+  "last_verified": "2026-03-21T06:00:00Z"
+}

@@ -1,0 +1,22 @@
+{
+  "models": [
+    {
+      "id": "claude-opus-4-6",
+      "provider": "anthropic",
+      "available": true,
+      "context_window": 1000000
+    },
+    {
+      "id": "codex-mini-latest",
+      "provider": "openai",
+      "available": true,
+      "context_window": 200000
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "provider": "google",
+      "available": true,
+      "context_window": 1000000
+    }
+  ]
+}

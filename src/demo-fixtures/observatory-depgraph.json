@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "Algebra.Group",
+      "label": "Algebra.Group"
+    },
+    {
+      "id": "Algebra.Ring",
+      "label": "Algebra.Ring"
+    },
+    {
+      "id": "Topology.Basic",
+      "label": "Topology.Basic"
+    },
+    {
+      "id": "CategoryTheory.Functor",
+      "label": "CategoryTheory.Functor"
+    },
+    {
+      "id": "Analysis.NormedSpace",
+      "label": "Analysis.NormedSpace"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Algebra.Ring",
+      "to": "Algebra.Group"
+    },
+    {
+      "from": "Analysis.NormedSpace",
+      "to": "Topology.Basic"
+    },
+    {
+      "from": "Analysis.NormedSpace",
+      "to": "Algebra.Group"
+    }
+  ]
+}

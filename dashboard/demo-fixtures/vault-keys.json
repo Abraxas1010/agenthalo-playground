@@ -1,0 +1,29 @@
+{
+  "keys": [
+    {
+      "name": "ed25519",
+      "type": "signing",
+      "created": "2026-03-01T00:00:00Z"
+    },
+    {
+      "name": "ml_dsa_65",
+      "type": "pq_signing",
+      "created": "2026-03-01T00:00:00Z"
+    },
+    {
+      "name": "x25519",
+      "type": "key_exchange",
+      "created": "2026-03-01T00:00:00Z"
+    },
+    {
+      "name": "ml_kem_768",
+      "type": "pq_kem",
+      "created": "2026-03-01T00:00:00Z"
+    },
+    {
+      "name": "secp256k1",
+      "type": "evm",
+      "created": "2026-03-01T00:00:00Z"
+    }
+  ]
+}

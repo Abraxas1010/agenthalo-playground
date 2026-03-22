@@ -1,0 +1,86 @@
+{
+  "modules": [
+    {
+      "name": "Algebra",
+      "size": 120,
+      "children": [
+        {
+          "name": "Group",
+          "size": 45
+        },
+        {
+          "name": "Ring",
+          "size": 38
+        },
+        {
+          "name": "Order",
+          "size": 37
+        }
+      ]
+    },
+    {
+      "name": "Topology",
+      "size": 85,
+      "children": [
+        {
+          "name": "Basic",
+          "size": 30
+        },
+        {
+          "name": "MetricSpace",
+          "size": 35
+        },
+        {
+          "name": "Uniform",
+          "size": 20
+        }
+      ]
+    },
+    {
+      "name": "CategoryTheory",
+      "size": 70,
+      "children": [
+        {
+          "name": "Functor",
+          "size": 25
+        },
+        {
+          "name": "NatTrans",
+          "size": 22
+        },
+        {
+          "name": "Limits",
+          "size": 23
+        }
+      ]
+    },
+    {
+      "name": "Analysis",
+      "size": 60,
+      "children": [
+        {
+          "name": "NormedSpace",
+          "size": 28
+        },
+        {
+          "name": "Calculus",
+          "size": 32
+        }
+      ]
+    },
+    {
+      "name": "LinearAlgebra",
+      "size": 45,
+      "children": [
+        {
+          "name": "Basic",
+          "size": 20
+        },
+        {
+          "name": "Matrix",
+          "size": 25
+        }
+      ]
+    }
+  ]
+}

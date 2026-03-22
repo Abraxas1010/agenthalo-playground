@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent H.A.L.O. Dashboard</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vendor/xterm.css">
+  <link rel="stylesheet" href="cockpit.css">
+  <link rel="stylesheet" href="vendor/litegraph.css">
+  <link rel="stylesheet" href="orchestration.css">
+  <link rel="stylesheet" href="observatory.css">
+  <link rel="stylesheet" href="vendor/katex.min.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/vendor/three.module.js",
+      "three/addons/": "/vendor/three-addons/"
+    }
+  }
+  </script>
+  <script src="chart.min.js"></script>
+  <script src="vendor/xterm.min.js"></script>
+  <script src="vendor/xterm-addon-fit.min.js"></script>
+  <script src="vendor/xterm-addon-webgl.min.js"></script>
+  <script src="vendor/litegraph.js"></script>
+  <script src="vendor/d3.v7.min.js"></script>
+  <script src="vendor/katex.min.js"></script>
+  <script src="vendor/mermaid.min.js"></script>
+  <!-- Monaco Editor (vendored ESM) -->
+  <script src="vendor/monaco/loader.js"></script>
+  <script>
+    require.config({ paths: { vs: 'vendor/monaco' } });
+    require(['vs/editor/editor.main'], function() {
+      monaco.editor.defineTheme('halo-terminal', {
+        base: 'vs-dark',
+        inherit: true,
+        rules: [
+          { token: 'comment',    foreground: '4ca43a', fontStyle: 'italic' },
+          { token: 'keyword',    foreground: 'ff6a00' },
+          { token: 'string',     foreground: '00ff41' },
+          { token: 'number',     foreground: 'ff9f2a' },
+          { token: 'type',       foreground: 'c49bff' },
+          { token: 'function',   foreground: '78ff74' },
+          { token: 'variable',   foreground: '35ff3e' },
+          { token: 'operator',   foreground: '4ba3ff' },
+        ],
+        colors: {
+          'editor.background':                '#080c05',
+          'editor.foreground':                '#35ff3e',
+          'editor.lineHighlightBackground':   '#142210',
+          'editor.selectionBackground':       '#1a331280',
+          'editorCursor.foreground':          '#ff6a00',
+          'editorLineNumber.foreground':      '#4ca43a',
+          'editorLineNumber.activeForeground':'#78ff74',
+          'editor.wordHighlightBackground':   '#1a331240',
+          'editorBracketMatch.background':    '#2a552240',
+          'editorBracketMatch.border':        '#2a5522',
+          'scrollbarSlider.background':       '#1a331240',
+          'scrollbarSlider.hoverBackground':  '#2a552260',
+          'minimap.background':               '#060a04',
+          'diffEditor.insertedTextBackground':    '#00ff4118',
+          'diffEditor.removedTextBackground':     '#ff303018',
+          'diffEditor.insertedLineBackground':    '#00ff4110',
+          'diffEditor.removedLineBackground':     '#ff303010',
+          'diffEditorGutter.insertedLineBackground': '#00ff4120',
+          'diffEditorGutter.removedLineBackground':  '#ff303020',
+        }
+      });
+      window.__monacoReady = true;
+      document.dispatchEvent(new Event('monaco-ready'));
+    });
+  </script>
+</head>
+<body>
+  <div id="crypto-lock-overlay" style="display:none"></div>
+  <div id="genesis-overlay" style="display:none">
+    <div class="genesis-circle">
+      <img class="genesis-hero" src="img/agentpmtbootup.png" alt="Genesis">
+      <div class="genesis-stages" id="genesis-stages"></div>
+    </div>
+    <div class="genesis-status" id="genesis-status"></div>
+  </div>
+  <div id="crt-overlay"></div>
+  <!-- SVG filter definitions (hidden — referenced by CSS filter:url()) -->
+  <svg style="position:absolute;width:0;height:0" aria-hidden="true">
+    <defs>
+      <!-- Hand-drawn rough border: displaces pixels via Perlin noise -->
+      <filter id="rough-border">
+        <feTurbulence type="fractalNoise" baseFrequency="0.04"
+                      numOctaves="4" stitchTiles="stitch"/>
+        <feDisplacementMap in="SourceGraphic" scale="3"/>
+      </filter>
+    </defs>
+  </svg>
+  <!-- Grain texture — tiled noise div. Always on. -->
+  <div id="grain-overlay"></div>
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <img class="halo-logo" src="img/agent_halo_logo.png" alt="Agent H.A.L.O." onerror="this.style.display='none'">
+      <div class="logo">H.A.L.O.</div>
+      <div class="logo-sub">|Human-AI|&gt; Agent Lifecycle Orchestrator</div>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-section" data-section="operate">Operate <span class="section-arrow">&#9662;</span></li>
+      <li data-section-item="operate"><a href="#/cockpit" class="nav-link" data-page="cockpit">
+        <span class="nav-icon">&#9654;</span> Cockpit</a></li>
+      <li data-section-item="operate"><a href="#/orchestration" class="nav-link" data-page="orchestration">
+        <span class="nav-icon">&#9851;</span> Orchestration</a></li>
+      <li data-section-item="operate"><a href="#/system-monitor" class="nav-link" data-page="system-monitor">
+        <span class="nav-icon">&#9881;</span> System Monitor</a></li>
+
+      <li class="nav-section" data-section="atp">ATP <span class="section-arrow">&#9662;</span></li>
+      <li data-section-item="atp"><a href="/forge.html" class="nav-link" title="Proof Forge — Autoformalization workbench">
+        <span class="nav-icon">&#9880;</span> Proof Forge</a></li>
+      <li data-section-item="atp"><a href="#/lean" class="nav-link" data-page="lean">
+        <span class="nav-icon">&#8466;</span> Lean Database</a></li>
+      <li data-section-item="atp"><a href="#/proof-explorer" class="nav-link" data-page="proof-explorer">
+        <span class="nav-icon">&#9670;</span> Proof Explorer</a></li>
+
+      <li class="nav-section" data-section="build">Build <span class="section-arrow">&#9662;</span></li>
+      <li data-section-item="build"><a href="#/mcp-tools" class="nav-link" data-page="mcp-tools">
+        <span class="nav-icon">&#9874;</span> MCP Tools</a></li>
+      <li data-section-item="build"><a href="#/skills" class="nav-link" data-page="skills">
+        <span class="nav-icon">&#9998;</span> Skills</a></li>
+
+      <li class="nav-section" data-section="enforce">Enforce <span class="section-arrow">&#9662;</span></li>
+      <li data-section-item="enforce"><a href="/gates.html" class="nav-link" title="Gates — All enforcement mechanisms">
+        <span class="nav-icon">&#9878;</span> Gates</a></li>
+      <li data-section-item="enforce"><a href="/codeguard.html" class="nav-link" title="CodeGuard — Code lock management and audit">
+        <span class="nav-icon">&#128274;</span> CodeGuard</a></li>
+      <li data-section-item="enforce"><a href="#/trust" class="nav-link" data-page="trust">
+        <span class="nav-icon">&#10003;</span> Trust</a></li>
+
+      <li class="nav-section" data-section="connect">Connect <span class="section-arrow">&#9662;</span></li>
+      <li data-section-item="connect"><a href="#/p2pclaw" class="nav-link" data-page="p2pclaw">
+        <span class="nav-icon">&#9788;</span> P2PCLAW</a></li>
+      <li data-section-item="connect"><a href="#/agentpmt" class="nav-link" data-page="agentpmt">
+        <span class="nav-icon">&#9883;</span> AgentPMT</a></li>
+
+      <li class="nav-section" data-section="data">Data <span class="section-arrow">&#9662;</span></li>
+      <li data-section-item="data"><a href="#/nucleusdb" class="nav-link" data-page="nucleusdb">
+        <span class="nav-icon">&#9762;</span> NucleusDB</a></li>
+      <li data-section-item="data"><a href="#/sessions" class="nav-link" data-page="sessions">
+        <span class="nav-icon">&#9776;</span> Sessions</a></li>
+      <li data-section-item="data"><a href="#/overview" class="nav-link nav-parent" data-page="overview" id="nav-overview-parent">
+        <span class="nav-icon">&#9670;</span> Overview <span class="nav-expand-arrow" id="nav-overview-arrow">&#9662;</span></a></li>
+      <li class="nav-sub-item" data-parent="overview" data-section-item="data"><a href="#/genesis" class="nav-link nav-sub" data-page="genesis">
+        <span class="nav-icon">&#9733;</span> Genesis</a></li>
+      <li class="nav-sub-item" data-parent="overview" data-section-item="data"><a href="#/identification" class="nav-link nav-sub" data-page="identification">
+        <span class="nav-icon">&#9919;</span> Identification</a></li>
+      <li class="nav-sub-item" data-parent="overview" data-section-item="data"><a href="#/communication" class="nav-link nav-sub" data-page="communication">
+        <span class="nav-icon">&#9889;</span> Communication</a></li>
+      <li class="nav-sub-item" data-parent="overview" data-section-item="data"><a href="#/nucleusdb-docs" class="nav-link nav-sub" data-page="nucleusdb-docs">
+        <span class="nav-icon">&#9762;</span> Memories</a></li>
+      <li class="nav-sub-item" data-parent="overview" data-section-item="data"><a href="#/flowchart" class="nav-link nav-sub" data-page="flowchart">
+        <span class="nav-icon">&#9634;</span> Flow Chart</a></li>
+
+    </ul>
+    <div class="sidebar-footer">
+      <a href="#/config" class="nav-link sidebar-footer-config" data-page="config">
+        <span class="nav-icon">&#9881;</span> Configuration</a>
+      <div class="sidebar-footer-row">
+        <div class="version" id="version-label">v0.3.0</div>
+        <button class="theme-toggle" onclick="toggleCRT()" title="Toggle CRT effects" id="crt-toggle">CRT</button>
+      </div>
+    </div>
+  </nav>
+  <main id="content">
+    <div id="page-loading" class="loading">Initializing terminal...</div>
+  </main>
+  <script src="vendor/thumbmark.min.js"></script>
+  <script src="demo-api.js"></script>
+  <script src="demo-banner.js"></script>
+  <script src="app.js"></script>
+  <script src="genesis-docs.js"></script>
+  <script src="cockpit.js"></script>
+  <script src="mcp-tools.js"></script>
+  <script src="orchestration.js"></script>
+  <script src="skills.js"></script>
+  <script src="lean.js"></script>
+  <script src="observatory.js"></script>
+  <script src="proof-explorer.js"></script>
+  <script src="proof-game.js"></script>
+  <!-- System Monitor: lazy-loaded, off by default. Enable in Config → System Monitor -->
+  <script src="system-monitor.js" defer></script>
+</body>
+</html>

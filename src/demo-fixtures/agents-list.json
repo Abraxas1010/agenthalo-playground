@@ -1,0 +1,22 @@
+{
+  "agents": [
+    {
+      "id": "agent_4b341909fca8",
+      "name": "Claude Opus",
+      "type": "claude",
+      "status": "registered"
+    },
+    {
+      "id": "agent_6ff3b3bd11c4",
+      "name": "Codex Worker",
+      "type": "codex",
+      "status": "registered"
+    },
+    {
+      "id": "agent_c3544aa158a8",
+      "name": "Gemini Analyst",
+      "type": "gemini",
+      "status": "registered"
+    }
+  ]
+}

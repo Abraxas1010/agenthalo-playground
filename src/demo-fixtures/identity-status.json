@@ -1,0 +1,23 @@
+{
+  "did": "did:halo:z6Mkdemo1234567890abcdef",
+  "evm_address": "0xDEMO000000000000000000000000000000000001",
+  "created_at": "2026-03-01T00:00:00Z",
+  "key_pairs": {
+    "ed25519": {
+      "public": "demo_ed25519_pub_key_placeholder"
+    },
+    "ml_dsa_65": {
+      "public": "demo_ml_dsa_pub_key_placeholder"
+    },
+    "x25519": {
+      "public": "demo_x25519_pub_key_placeholder"
+    },
+    "ml_kem_768": {
+      "public": "demo_ml_kem_pub_key_placeholder"
+    },
+    "secp256k1": {
+      "public": "demo_secp256k1_pub_key_placeholder"
+    }
+  },
+  "sovereign_binding": true
+}

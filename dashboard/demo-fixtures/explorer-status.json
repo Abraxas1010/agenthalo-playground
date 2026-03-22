@@ -1,0 +1,6 @@
+{
+  "server": "static",
+  "mode": "fallback",
+  "declarations": 500,
+  "ready": true
+}

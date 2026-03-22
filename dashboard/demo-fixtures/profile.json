@@ -1,0 +1,6 @@
+{
+  "name": "Demo Agent",
+  "did": "did:halo:z6Mkdemo1234567890abcdef",
+  "agent_type": "multi",
+  "trust_score": 0.94
+}

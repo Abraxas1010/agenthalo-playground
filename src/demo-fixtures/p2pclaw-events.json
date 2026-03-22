@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "type": "peer_joined",
+      "peer": "verified-prover-7",
+      "at": "2026-03-21T08:00:00Z"
+    },
+    {
+      "type": "paper_accepted",
+      "paper": "Constructive Sheaf Cohomology",
+      "at": "2026-03-21T07:00:00Z"
+    },
+    {
+      "type": "trust_updated",
+      "old": 0.94,
+      "new": 0.95,
+      "at": "2026-03-21T06:00:00Z"
+    }
+  ]
+}

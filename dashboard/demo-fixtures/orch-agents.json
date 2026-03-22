@@ -1,0 +1,28 @@
+{
+  "agents": [
+    {
+      "id": "agent_4b341909fca8",
+      "name": "Claude Opus",
+      "status": "idle",
+      "model": "claude-opus-4-6",
+      "tasks_completed": 45,
+      "trust_score": 0.96
+    },
+    {
+      "id": "agent_6ff3b3bd11c4",
+      "name": "Codex Worker",
+      "status": "idle",
+      "model": "codex-mini-latest",
+      "tasks_completed": 32,
+      "trust_score": 0.91
+    },
+    {
+      "id": "agent_c3544aa158a8",
+      "name": "Gemini Analyst",
+      "status": "active",
+      "model": "gemini-2.5-pro",
+      "tasks_completed": 28,
+      "trust_score": 0.93
+    }
+  ]
+}

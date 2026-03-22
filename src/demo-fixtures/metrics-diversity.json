@@ -1,0 +1,12 @@
+{
+  "shannon_entropy": 2.14,
+  "unique_tactics": 28,
+  "tactic_distribution": {
+    "simp": 0.25,
+    "exact": 0.2,
+    "rfl": 0.15,
+    "apply": 0.12,
+    "ring": 0.08,
+    "other": 0.2
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "agent": "claude",
+    "cost_usd": 28.42,
+    "sessions": 4,
+    "percent": 66.3
+  },
+  {
+    "agent": "codex",
+    "cost_usd": 6.15,
+    "sessions": 4,
+    "percent": 14.3
+  },
+  {
+    "agent": "gemini",
+    "cost_usd": 8.3,
+    "sessions": 4,
+    "percent": 19.4
+  }
+]
