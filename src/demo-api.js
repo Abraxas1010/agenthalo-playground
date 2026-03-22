@@ -11,7 +11,7 @@
   // --- Set default page to Lean System if no hash is set ---
   // This runs BEFORE app.js router, so the router sees #/lean instead of defaulting to config
   if (!location.hash || location.hash === "#" || location.hash === "#/") {
-    location.hash = "#/lean";
+    location.hash = "#/lean/lattice";
   }
 
   // --- Fixture loader (lazy, cached) ---

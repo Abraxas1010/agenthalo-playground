@@ -94,7 +94,7 @@
         overlay.style.transition = "opacity 0.4s";
         overlay.style.opacity = "0";
         // Default to Lean System page — the showcase page for the demo
-        location.hash = "#/lean";
+        location.hash = "#/lean/lattice";
         setTimeout(function() { overlay.remove(); }, 400);
       };
     }

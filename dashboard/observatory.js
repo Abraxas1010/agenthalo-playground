@@ -1229,7 +1229,7 @@
     body.innerHTML = '<div class="obs-loading">Loading lattice for ' + esc(clusterName) + '...</div>';
 
     // Try to load proof-lattice.json, filter to this cluster
-    fetch('/proof-lattice.json?v=1')
+    fetch('proof-lattice.json?v=1')
       .then(function(r) { if (!r.ok) throw new Error('no data'); return r.json(); })
       .then(function(lattice) {
         if (!lattice.items || !lattice.items.length) throw new Error('empty');
@@ -1302,8 +1302,8 @@
     var colors = ['#00ee00','#00ccff','#39ff14','#00ff88','#7fff00','#00fa9a','#32cd32','#48d1cc','#66cdaa','#00bfff'];
 
     requestAnimationFrame(function() {
-      import('/vendor/three.module.js').then(function(THREE) {
-        return import('/vendor/three-addons/OrbitControls.js').then(function(mod) {
+      import('vendor/three.module.js').then(function(THREE) {
+        return import('vendor/three-addons/OrbitControls.js').then(function(mod) {
           var OrbitControls = mod.OrbitControls;
           var w = mount.clientWidth || 500, h = mount.clientHeight || 340;
           var scene = new THREE.Scene();

@@ -198,8 +198,8 @@
     if (threeCleanup) { threeCleanup(); threeCleanup = null; }
     var mount = document.getElementById('pe-three-mount');
     if (!mount || !data) return;
-    import('/vendor/three.module.js').then(function(THREE) {
-      return import('/vendor/three-addons/OrbitControls.js').then(function(mod) {
+    import('vendor/three.module.js').then(function(THREE) {
+      return import('vendor/three-addons/OrbitControls.js').then(function(mod) {
         var OrbitControls = mod.OrbitControls;
         mount.innerHTML = '';
         var w = mount.clientWidth || 800, h = mount.clientHeight || 500;
@@ -468,7 +468,7 @@
   // ── Data fetching — build proof lattice from live Observatory data ──
   function fetchProofData() {
     // Try static file first (pre-generated with UMAP positions)
-    return fetch('/proof-lattice.json?v=' + Date.now())
+    return fetch('proof-lattice.json?v=' + Date.now())
       .then(function(r) {
         if (!r.ok) throw new Error('no static file');
         return r.json();
