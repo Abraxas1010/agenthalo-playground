@@ -32,10 +32,18 @@ fi
 # Inject CSS that overrides the collapsed state so all items are always visible.
 if ! grep -q 'demo-nav-force' "$OUTPUT/index.html"; then
   sed -i '/<\/head>/i \  <style id="demo-nav-force">\
-    /* Demo: force all nav sections and sub-items visible */\
-    .nav-section-hidden { display: list-item !important; }\
-    .nav-sub-item { display: list-item !important; }\
-    .nav-section .section-arrow { transform: rotate(0deg) !important; }\
+    /* Demo: force all nav sections and sub-items always visible */\
+    li.nav-section-hidden {\
+      max-height: 50px !important;\
+      opacity: 1 !important;\
+      padding: 0 12px !important;\
+      pointer-events: auto !important;\
+    }\
+    .nav-sub-item {\
+      max-height: 50px !important;\
+      opacity: 1 !important;\
+      overflow: visible !important;\
+    }\
   </style>' "$OUTPUT/index.html"
 fi
 
@@ -57,6 +65,10 @@ for html_file in "$OUTPUT"/index.html "$OUTPUT"/gates.html "$OUTPUT"/codeguard.h
     sed -i 's|href="/forge.html"|href="forge.html"|g' "$html_file"
     # Importmap and script src: "/vendor/" → "./vendor/"
     sed -i 's|"/vendor/|"./vendor/|g' "$html_file"
+    # "← Dashboard" back link: href="/" → href="index.html"
+    sed -i 's|href="/"|href="index.html"|g' "$html_file"
+    # CodeGuard link inside gates page
+    sed -i 's|href="/codeguard.html"|href="codeguard.html"|g' "$html_file"
   fi
 done
 
@@ -66,6 +78,10 @@ for js_file in "$OUTPUT"/*.js; do
   sed -i 's|import("/vendor/|import("./vendor/|g' "$js_file" 2>/dev/null || true
   sed -i "s|fetch('/vendor/|fetch('./vendor/|g" "$js_file" 2>/dev/null || true
   sed -i "s|fetch('/proof-lattice|fetch('./proof-lattice|g" "$js_file" 2>/dev/null || true
+  # Fix iframe src="/forge.html" and similar absolute HTML page refs in JS
+  sed -i 's|src="/forge.html"|src="forge.html"|g' "$js_file" 2>/dev/null || true
+  sed -i 's|src="/gates.html"|src="gates.html"|g' "$js_file" 2>/dev/null || true
+  sed -i 's|src="/codeguard.html"|src="codeguard.html"|g' "$js_file" 2>/dev/null || true
 done
 
 # --- Step 4: Extract route manifest from Rust source ---

@@ -460,7 +460,7 @@ function __leanSwitchView(mode) {
     }
   } else if (mode === 'forge') {
     container.className = 'lean-view-content lean-view-mode-forge';
-    container.innerHTML = '<iframe class="lean-forge-frame" src="/forge.html" title="Proof Forge"></iframe>';
+    container.innerHTML = '<iframe class="lean-forge-frame" src="forge.html" title="Proof Forge"></iframe>';
   }
 }
 
