@@ -1,0 +1,16 @@
+{
+  "changed": [
+    {
+      "path": "lean/HeytingLean/Bridge.lean",
+      "status": "M"
+    },
+    {
+      "path": "lean/HeytingLean/Derives.lean",
+      "status": "M"
+    },
+    {
+      "path": "scripts/prove_assist.py",
+      "status": "M"
+    }
+  ]
+}

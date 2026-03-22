@@ -82,5 +82,103 @@
         }
       ]
     }
+  ],
+  "files": [
+    {
+      "path": "Algebra/Group/Basic.lean",
+      "lines": 450,
+      "decl_count": 32,
+      "sorry_count": 0
+    },
+    {
+      "path": "Algebra/Group/Hom.lean",
+      "lines": 380,
+      "decl_count": 24,
+      "sorry_count": 0
+    },
+    {
+      "path": "Algebra/Ring/Basic.lean",
+      "lines": 520,
+      "decl_count": 41,
+      "sorry_count": 0
+    },
+    {
+      "path": "Algebra/Ring/Ideal.lean",
+      "lines": 310,
+      "decl_count": 18,
+      "sorry_count": 0
+    },
+    {
+      "path": "Algebra/Order/Ring.lean",
+      "lines": 290,
+      "decl_count": 15,
+      "sorry_count": 0
+    },
+    {
+      "path": "Topology/Basic.lean",
+      "lines": 400,
+      "decl_count": 28,
+      "sorry_count": 0
+    },
+    {
+      "path": "Topology/MetricSpace/Basic.lean",
+      "lines": 560,
+      "decl_count": 35,
+      "sorry_count": 0
+    },
+    {
+      "path": "Topology/MetricSpace/Lipschitz.lean",
+      "lines": 280,
+      "decl_count": 12,
+      "sorry_count": 0
+    },
+    {
+      "path": "Topology/Uniform/Basic.lean",
+      "lines": 340,
+      "decl_count": 20,
+      "sorry_count": 0
+    },
+    {
+      "path": "CategoryTheory/Functor/Basic.lean",
+      "lines": 480,
+      "decl_count": 30,
+      "sorry_count": 0
+    },
+    {
+      "path": "CategoryTheory/NatTrans.lean",
+      "lines": 360,
+      "decl_count": 22,
+      "sorry_count": 0
+    },
+    {
+      "path": "CategoryTheory/Limits/Basic.lean",
+      "lines": 420,
+      "decl_count": 26,
+      "sorry_count": 0
+    },
+    {
+      "path": "Analysis/NormedSpace/Basic.lean",
+      "lines": 510,
+      "decl_count": 34,
+      "sorry_count": 0
+    },
+    {
+      "path": "Analysis/Calculus/Deriv.lean",
+      "lines": 440,
+      "decl_count": 28,
+      "sorry_count": 0
+    },
+    {
+      "path": "LinearAlgebra/Basic.lean",
+      "lines": 350,
+      "decl_count": 19,
+      "sorry_count": 0
+    },
+    {
+      "path": "LinearAlgebra/Matrix/Basic.lean",
+      "lines": 490,
+      "decl_count": 31,
+      "sorry_count": 0
+    }
   ]
 }

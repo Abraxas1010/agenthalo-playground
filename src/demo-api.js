@@ -59,6 +59,7 @@
 
     // Proof Gate (Phase B: real verification)
     ["/api/proof-gate/status",       "proof-gate",       { exact: true }],
+    ["/api/proof-gate/certificates", "proof-gate-certificates", { exact: true }],
     ["/api/proof-gate/",             "proof-gate-action", {}],
 
     // MCP Tools
@@ -103,6 +104,7 @@
     ["/api/orchestrator/",           "orch-stub",        {}],
 
     // Workflows
+    ["/api/workflows/instances",     "workflow-instances", { exact: true }],
     ["/api/workflows",               "workflows",        { exact: true }],
     ["/api/workflows/",              "workflow-stub",    {}],
 
@@ -155,6 +157,8 @@
 
     // Files/Editor
     ["/api/files/tree",              "files-tree",       { exact: true }],
+    ["/api/files/git-status",        "files-git-status", { exact: true }],
+    ["/api/files/recent",            "files-recent",     {}],
     ["/api/files/",                  "files-stub",       {}],
 
     // Networking / Metrics
@@ -187,6 +191,7 @@
     ["/api/library/",                "library-stub",     {}],
 
     // Lean
+    ["/api/lean/scan",               "lean-scan",        { exact: true }],
     ["/api/lean/",                   "lean-stub",        {}],
 
     // Proxy (v1 endpoints)

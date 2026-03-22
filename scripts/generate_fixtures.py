@@ -359,7 +359,51 @@ def generate_config():
         "forge_enabled": True,
         "observatory_enabled": True,
         "lean_project": "/workspace/lean",
-        "addons": [],
+        "authentication": {
+            "authenticated": False,
+            "mode": "local",
+            "provider": None,
+        },
+        "x402": {
+            "enabled": False,
+            "network": "base-sepolia",
+            "max_auto_approve_usd": 1.0,
+        },
+        "wrapping": {
+            "shell_rc": "~/.bashrc",
+            "mode": "passthrough",
+        },
+        "paths": {
+            "home": "/home/demo/.agenthalo",
+            "db": "/home/demo/.agenthalo/traces.ndb",
+            "credentials": "/home/demo/.agenthalo/credentials.json",
+            "lean_project": "/workspace/lean",
+        },
+        "onchain": {
+            "chain_name": "Base Sepolia",
+            "chain_id": "84532",
+            "contract_address": None,
+        },
+        "addons": {
+            "p2pclaw": True,
+            "agentpmt_workflows": False,
+        },
+        "agentpmt": {
+            "enabled": False,
+            "budget_tag": None,
+            "endpoint": None,
+            "auth_configured": False,
+            "tool_count": 0,
+        },
+        "wallet_status": {
+            "agentpmt_connected": False,
+            "agentaddress_connected": False,
+            "agentaddress_address": None,
+        },
+        "container_runtime": {
+            "available": False,
+            "engine": None,
+        },
     }
 
 
@@ -672,26 +716,34 @@ def generate_codeguard_manifest():
             "hash": hashlib.sha256(name.encode()).hexdigest()[:16],
             "locked_at": f"2026-03-{10 + i:02d}T12:00:00Z" if i != 2 else None,
         })
-    return {"artifacts": artifacts, "locked_count": 8, "review_count": 2, "total": 10}
+    return {
+        "ok": True,
+        "manifest": {"artifacts": artifacts, "locked_count": 8, "review_count": 2, "total": 10},
+        "path": "/workspace/.codeguard/manifest.json",
+        "artifacts": artifacts, "locked_count": 8, "review_count": 2, "total": 10,
+    }
 
 
 def generate_codeguard_graph():
     return {
-        "nodes": [
-            {"id": n, "label": n.split(".")[-1]}
-            for n in ["CommitCert", "ShellAuth", "HybridKem", "MerkleVerify", "GenesisDerive"]
-        ],
-        "edges": [
-            {"from": "CommitCert", "to": "MerkleVerify"},
-            {"from": "ShellAuth", "to": "GenesisDerive"},
-            {"from": "HybridKem", "to": "GenesisDerive"},
-            {"from": "MerkleVerify", "to": "CommitCert"},
-        ],
+        "ok": True,
+        "graph": {
+            "nodes": [
+                {"id": n, "label": n.split(".")[-1]}
+                for n in ["CommitCert", "ShellAuth", "HybridKem", "MerkleVerify", "GenesisDerive"]
+            ],
+            "edges": [
+                {"from": "CommitCert", "to": "MerkleVerify"},
+                {"from": "ShellAuth", "to": "GenesisDerive"},
+                {"from": "HybridKem", "to": "GenesisDerive"},
+                {"from": "MerkleVerify", "to": "CommitCert"},
+            ],
+        },
     }
 
 
 def generate_codeguard_config():
-    return {"auto_lock": True, "review_required": True, "audit_log_enabled": True}
+    return {"ok": True, "auto_lock": True, "review_required": True, "audit_log_enabled": True}
 
 
 def generate_codeguard_audit():
@@ -845,7 +897,30 @@ def generate_observatory_treemap():
             {"name": "Basic", "size": 20}, {"name": "Matrix", "size": 25},
         ]},
     ]
-    return {"modules": modules}
+    # proof-explorer.js expects treemap.files[] with {path, lines, decl_count, sorry_count}
+    file_templates = [
+        ("Algebra/Group/Basic.lean", 450, 32, 0),
+        ("Algebra/Group/Hom.lean", 380, 24, 0),
+        ("Algebra/Ring/Basic.lean", 520, 41, 0),
+        ("Algebra/Ring/Ideal.lean", 310, 18, 0),
+        ("Algebra/Order/Ring.lean", 290, 15, 0),
+        ("Topology/Basic.lean", 400, 28, 0),
+        ("Topology/MetricSpace/Basic.lean", 560, 35, 0),
+        ("Topology/MetricSpace/Lipschitz.lean", 280, 12, 0),
+        ("Topology/Uniform/Basic.lean", 340, 20, 0),
+        ("CategoryTheory/Functor/Basic.lean", 480, 30, 0),
+        ("CategoryTheory/NatTrans.lean", 360, 22, 0),
+        ("CategoryTheory/Limits/Basic.lean", 420, 26, 0),
+        ("Analysis/NormedSpace/Basic.lean", 510, 34, 0),
+        ("Analysis/Calculus/Deriv.lean", 440, 28, 0),
+        ("LinearAlgebra/Basic.lean", 350, 19, 0),
+        ("LinearAlgebra/Matrix/Basic.lean", 490, 31, 0),
+    ]
+    files = [
+        {"path": path, "lines": lines, "decl_count": decls, "sorry_count": sorry}
+        for path, lines, decls, sorry in file_templates
+    ]
+    return {"modules": modules, "files": files}
 
 
 def generate_observatory_depgraph():
@@ -980,6 +1055,94 @@ def generate_agents_list():
     ]}
 
 
+def generate_lean_scan():
+    """Lean project scan result expected by proof-game.js."""
+    return {
+        "ok": True,
+        "tree": {
+            "children": [
+                {"name": "HeytingLean", "type": "dir", "children": [
+                    {"name": "Bridge.lean", "type": "file", "path": "HeytingLean/Bridge.lean", "size": 25600},
+                    {"name": "Derives.lean", "type": "file", "path": "HeytingLean/Derives.lean", "size": 58000},
+                    {"name": "Context.lean", "type": "file", "path": "HeytingLean/Context.lean", "size": 8200},
+                    {"name": "Supports.lean", "type": "file", "path": "HeytingLean/Supports.lean", "size": 12400},
+                    {"name": "ATheory", "type": "dir", "children": [
+                        {"name": "AssemblyCore.lean", "type": "file", "path": "HeytingLean/ATheory/AssemblyCore.lean", "size": 15000},
+                        {"name": "HeytingAlgebra.lean", "type": "file", "path": "HeytingLean/ATheory/HeytingAlgebra.lean", "size": 9800},
+                    ]},
+                    {"name": "NucleusDB", "type": "dir", "children": [
+                        {"name": "Core.lean", "type": "file", "path": "HeytingLean/NucleusDB/Core.lean", "size": 18000},
+                        {"name": "Proofs.lean", "type": "file", "path": "HeytingLean/NucleusDB/Proofs.lean", "size": 22000},
+                    ]},
+                ]},
+                {"name": "lakefile.lean", "type": "file", "path": "lakefile.lean", "size": 3200},
+            ],
+        },
+    }
+
+
+def generate_proof_gate_certificates():
+    """Proof gate certificates expected by gates.js and system-monitor.js."""
+    certs = []
+    cert_names = [
+        "commit_certificate", "sheaf_coherence", "ipa_opening",
+        "nucleus_step_mono", "cert_refinement", "consistency_inclusion",
+        "commitment_soundness", "dual_auth", "hybrid_kem",
+        "connectivity_preserve", "component_lifting", "witness_chain",
+    ]
+    for i, name in enumerate(cert_names):
+        certs.append({
+            "filename": f"{name}.lean4export",
+            "verification": {
+                "all_checked": True,
+                "declarations_checked": 3 + i * 2,
+                "errors": [],
+            },
+            "hash": hashlib.sha256(name.encode()).hexdigest()[:16],
+        })
+    return {"certificates": certs}
+
+
+def generate_workflow_instances():
+    """Workflow execution history expected by orchestration.js."""
+    return {
+        "instances": [
+            {
+                "id": deterministic_id("wfi", i),
+                "workflow_id": deterministic_id("wf", i % 3),
+                "status": ["completed", "completed", "completed", "running", "failed"][i % 5],
+                "started_at": f"2026-03-{15 + i:02d}T10:00:00Z",
+                "ended_at": f"2026-03-{15 + i:02d}T10:30:00Z" if i % 5 < 3 else None,
+            }
+            for i in range(5)
+        ]
+    }
+
+
+def generate_files_git_status():
+    """Git status expected by observatory.js."""
+    return {
+        "changed": [
+            {"path": "lean/HeytingLean/Bridge.lean", "status": "M"},
+            {"path": "lean/HeytingLean/Derives.lean", "status": "M"},
+            {"path": "scripts/prove_assist.py", "status": "M"},
+        ]
+    }
+
+
+def generate_files_recent():
+    """Recently opened files expected by observatory.js."""
+    return {
+        "files": [
+            {"path": "lean/HeytingLean/Bridge.lean", "opened_at": "2026-03-21T10:00:00Z"},
+            {"path": "lean/HeytingLean/Derives.lean", "opened_at": "2026-03-21T09:30:00Z"},
+            {"path": "lean/HeytingLean/Context.lean", "opened_at": "2026-03-21T09:00:00Z"},
+            {"path": "src/dashboard/api.rs", "opened_at": "2026-03-20T16:00:00Z"},
+            {"path": "scripts/prove_assist.py", "opened_at": "2026-03-20T14:00:00Z"},
+        ]
+    }
+
+
 def generate_library_status():
     return {"status": "ready", "sessions": 12, "total_events": 3247}
 
@@ -1098,6 +1261,15 @@ def main():
         # Library
         "library-status": generate_library_status,
         "library-sessions": generate_library_sessions,
+        # Lean scan
+        "lean-scan": generate_lean_scan,
+        # Proof gate certificates
+        "proof-gate-certificates": generate_proof_gate_certificates,
+        # Workflow instances
+        "workflow-instances": generate_workflow_instances,
+        # Files (observatory)
+        "files-git-status": generate_files_git_status,
+        "files-recent": generate_files_recent,
     }
 
     for name, gen in generators.items():

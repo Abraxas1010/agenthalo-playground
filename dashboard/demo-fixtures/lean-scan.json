@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "tree": {
+    "children": [
+      {
+        "name": "HeytingLean",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Bridge.lean",
+            "type": "file",
+            "path": "HeytingLean/Bridge.lean",
+            "size": 25600
+          },
+          {
+            "name": "Derives.lean",
+            "type": "file",
+            "path": "HeytingLean/Derives.lean",
+            "size": 58000
+          },
+          {
+            "name": "Context.lean",
+            "type": "file",
+            "path": "HeytingLean/Context.lean",
+            "size": 8200
+          },
+          {
+            "name": "Supports.lean",
+            "type": "file",
+            "path": "HeytingLean/Supports.lean",
+            "size": 12400
+          },
+          {
+            "name": "ATheory",
+            "type": "dir",
+            "children": [
+              {
+                "name": "AssemblyCore.lean",
+                "type": "file",
+                "path": "HeytingLean/ATheory/AssemblyCore.lean",
+                "size": 15000
+              },
+              {
+                "name": "HeytingAlgebra.lean",
+                "type": "file",
+                "path": "HeytingLean/ATheory/HeytingAlgebra.lean",
+                "size": 9800
+              }
+            ]
+          },
+          {
+            "name": "NucleusDB",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Core.lean",
+                "type": "file",
+                "path": "HeytingLean/NucleusDB/Core.lean",
+                "size": 18000
+              },
+              {
+                "name": "Proofs.lean",
+                "type": "file",
+                "path": "HeytingLean/NucleusDB/Proofs.lean",
+                "size": 22000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lakefile.lean",
+        "type": "file",
+        "path": "lakefile.lean",
+        "size": 3200
+      }
+    ]
+  }
+}

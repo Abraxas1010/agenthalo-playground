@@ -1,0 +1,112 @@
+{
+  "certificates": [
+    {
+      "filename": "commit_certificate.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 3,
+        "errors": []
+      },
+      "hash": "6e59affaf866df4f"
+    },
+    {
+      "filename": "sheaf_coherence.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 5,
+        "errors": []
+      },
+      "hash": "c0574e1d6da77e36"
+    },
+    {
+      "filename": "ipa_opening.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 7,
+        "errors": []
+      },
+      "hash": "9367a8d756ee2ce5"
+    },
+    {
+      "filename": "nucleus_step_mono.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 9,
+        "errors": []
+      },
+      "hash": "51dfb5877a2e08b1"
+    },
+    {
+      "filename": "cert_refinement.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 11,
+        "errors": []
+      },
+      "hash": "9b6d53d0f811755e"
+    },
+    {
+      "filename": "consistency_inclusion.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 13,
+        "errors": []
+      },
+      "hash": "79f0f7f5bc532999"
+    },
+    {
+      "filename": "commitment_soundness.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 15,
+        "errors": []
+      },
+      "hash": "419164e521532510"
+    },
+    {
+      "filename": "dual_auth.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 17,
+        "errors": []
+      },
+      "hash": "9ab281995108977b"
+    },
+    {
+      "filename": "hybrid_kem.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 19,
+        "errors": []
+      },
+      "hash": "061e939cd35bab54"
+    },
+    {
+      "filename": "connectivity_preserve.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 21,
+        "errors": []
+      },
+      "hash": "f2081735114da546"
+    },
+    {
+      "filename": "component_lifting.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 23,
+        "errors": []
+      },
+      "hash": "e767fb5a403f1591"
+    },
+    {
+      "filename": "witness_chain.lean4export",
+      "verification": {
+        "all_checked": true,
+        "declarations_checked": 25,
+        "errors": []
+      },
+      "hash": "b78141c192f69be7"
+    }
+  ]
+}

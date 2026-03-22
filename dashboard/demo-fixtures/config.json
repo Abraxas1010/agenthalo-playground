@@ -9,5 +9,49 @@
   "forge_enabled": true,
   "observatory_enabled": true,
   "lean_project": "/workspace/lean",
-  "addons": []
+  "authentication": {
+    "authenticated": false,
+    "mode": "local",
+    "provider": null
+  },
+  "x402": {
+    "enabled": false,
+    "network": "base-sepolia",
+    "max_auto_approve_usd": 1.0
+  },
+  "wrapping": {
+    "shell_rc": "~/.bashrc",
+    "mode": "passthrough"
+  },
+  "paths": {
+    "home": "/home/demo/.agenthalo",
+    "db": "/home/demo/.agenthalo/traces.ndb",
+    "credentials": "/home/demo/.agenthalo/credentials.json",
+    "lean_project": "/workspace/lean"
+  },
+  "onchain": {
+    "chain_name": "Base Sepolia",
+    "chain_id": "84532",
+    "contract_address": null
+  },
+  "addons": {
+    "p2pclaw": true,
+    "agentpmt_workflows": false
+  },
+  "agentpmt": {
+    "enabled": false,
+    "budget_tag": null,
+    "endpoint": null,
+    "auth_configured": false,
+    "tool_count": 0
+  },
+  "wallet_status": {
+    "agentpmt_connected": false,
+    "agentaddress_connected": false,
+    "agentaddress_address": null
+  },
+  "container_runtime": {
+    "available": false,
+    "engine": null
+  }
 }

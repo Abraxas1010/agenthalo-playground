@@ -1,0 +1,39 @@
+{
+  "instances": [
+    {
+      "id": "wfi_2bb7c6b71675",
+      "workflow_id": "wf_7313a7042cbf",
+      "status": "completed",
+      "started_at": "2026-03-15T10:00:00Z",
+      "ended_at": "2026-03-15T10:30:00Z"
+    },
+    {
+      "id": "wfi_966e20046409",
+      "workflow_id": "wf_b3dcb3863c91",
+      "status": "completed",
+      "started_at": "2026-03-16T10:00:00Z",
+      "ended_at": "2026-03-16T10:30:00Z"
+    },
+    {
+      "id": "wfi_ceca8b2dcd29",
+      "workflow_id": "wf_109303069d28",
+      "status": "completed",
+      "started_at": "2026-03-17T10:00:00Z",
+      "ended_at": "2026-03-17T10:30:00Z"
+    },
+    {
+      "id": "wfi_12b5ce4de4d4",
+      "workflow_id": "wf_7313a7042cbf",
+      "status": "running",
+      "started_at": "2026-03-18T10:00:00Z",
+      "ended_at": null
+    },
+    {
+      "id": "wfi_2fcc70a6c8be",
+      "workflow_id": "wf_b3dcb3863c91",
+      "status": "failed",
+      "started_at": "2026-03-19T10:00:00Z",
+      "ended_at": null
+    }
+  ]
+}
