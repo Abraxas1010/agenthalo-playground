@@ -8,10 +8,38 @@
   const _fixtureCache = {};
   const DEMO_VERSION = "1.0.1";
 
-  // --- Set default page to Lean System if no hash is set ---
-  // This runs BEFORE app.js router, so the router sees #/lean instead of defaulting to config
+  // --- Set default page to Lean System Lattice if no hash is set ---
   if (!location.hash || location.hash === "#" || location.hash === "#/") {
     location.hash = "#/lean/lattice";
+  }
+
+  // --- Force all nav sections and sub-items visible ---
+  // app.js collapses sections via localStorage + JS class toggling.
+  // CSS !important can't reliably override because the source uses !important too.
+  // Instead: clear the collapse state and use a MutationObserver to undo any hiding.
+  try { localStorage.removeItem("nav_collapsed"); } catch(_e) {}
+
+  function forceNavOpen() {
+    document.querySelectorAll(".nav-section-hidden").forEach(function(el) {
+      el.classList.remove("nav-section-hidden");
+    });
+    document.querySelectorAll(".nav-sub-item").forEach(function(el) {
+      el.classList.add("nav-sub-visible");
+    });
+    document.querySelectorAll(".nav-section.collapsed").forEach(function(el) {
+      el.classList.remove("collapsed");
+    });
+  }
+
+  // Run after DOM is ready and keep watching for app.js re-collapsing
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function() {
+      forceNavOpen();
+      new MutationObserver(forceNavOpen).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
+    });
+  } else {
+    forceNavOpen();
+    new MutationObserver(forceNavOpen).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
   }
 
   // --- Fixture loader (lazy, cached) ---

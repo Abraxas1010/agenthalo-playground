@@ -30,22 +30,7 @@ fi
 # --- Step 2b: Force all nav sections open and sub-items visible ---
 # In demo mode, nav sections collapse via localStorage which is empty/stale for visitors.
 # Inject CSS that overrides the collapsed state so all items are always visible.
-if ! grep -q 'demo-nav-force' "$OUTPUT/index.html"; then
-  sed -i '/<\/head>/i \  <style id="demo-nav-force">\
-    /* Demo: force all nav sections and sub-items always visible */\
-    li.nav-section-hidden {\
-      max-height: 50px !important;\
-      opacity: 1 !important;\
-      padding: 0 12px !important;\
-      pointer-events: auto !important;\
-    }\
-    .nav-sub-item {\
-      max-height: 50px !important;\
-      opacity: 1 !important;\
-      overflow: visible !important;\
-    }\
-  </style>' "$OUTPUT/index.html"
-fi
+# Nav unfurl is handled by demo-api.js (JS-level, not CSS) — see below
 
 # --- Step 3: Strip production-only meta tags ---
 # CSP is set by the Rust server via HTTP headers; the meta tags are unnecessary in static hosting
@@ -65,8 +50,10 @@ for html_file in "$OUTPUT"/index.html "$OUTPUT"/gates.html "$OUTPUT"/codeguard.h
     sed -i 's|href="/forge.html"|href="forge.html"|g' "$html_file"
     # Importmap and script src: "/vendor/" → "./vendor/"
     sed -i 's|"/vendor/|"./vendor/|g' "$html_file"
-    # "← Dashboard" back link: href="/" → href="index.html"
-    sed -i 's|href="/"|href="index.html"|g' "$html_file"
+    # "← Dashboard" back link: href="/" → javascript:history.back()
+    sed -i 's|href="/" class="back-link"|href="javascript:history.back()" class="back-link"|g' "$html_file"
+    # Also catch any already-rewritten index.html back links
+    sed -i 's|href="index.html" class="back-link"|href="javascript:history.back()" class="back-link"|g' "$html_file"
     # CodeGuard link inside gates page
     sed -i 's|href="/codeguard.html"|href="codeguard.html"|g' "$html_file"
   fi
