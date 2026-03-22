@@ -1,182 +1,266 @@
 [
   {
     "id": "sess_0e32adf0d134",
+    "session_id": "sess_0e32adf0d134",
     "agent_type": "claude",
     "model": "claude-opus-4-6",
     "status": "completed",
     "started_at": "2026-03-01T08:00:00Z",
     "ended_at": "2026-03-01T09:30:00Z",
+    "duration_secs": 3600,
     "event_count": 40,
+    "input_tokens": 8000,
+    "output_tokens": 2000,
     "cost_usd": 0.27,
     "trust_score": 0.85,
     "tags": [
       "mathlib",
       "algebra"
-    ]
+    ],
+    "description": "Prove group homomorphism preserves identity",
+    "tool_calls": 5,
+    "files_modified": 1
   },
   {
     "id": "sess_abe633f3a47a",
+    "session_id": "sess_abe633f3a47a",
     "agent_type": "codex",
     "model": "codex-mini-latest",
     "status": "completed",
     "started_at": "2026-03-02T09:00:00Z",
     "ended_at": "2026-03-02T10:30:00Z",
+    "duration_secs": 4020,
     "event_count": 47,
+    "input_tokens": 9234,
+    "output_tokens": 2567,
     "cost_usd": 0.0293,
     "trust_score": 0.88,
     "tags": [
       "mathlib",
       "topology"
-    ]
+    ],
+    "description": "Translate Coq ring theory to Lean 4",
+    "tool_calls": 8,
+    "files_modified": 2
   },
   {
     "id": "sess_2b8ea9758113",
+    "session_id": "sess_2b8ea9758113",
     "agent_type": "gemini",
     "model": "gemini-2.5-pro",
     "status": "completed",
     "started_at": "2026-03-03T10:00:00Z",
     "ended_at": "2026-03-03T11:30:00Z",
+    "duration_secs": 4440,
     "event_count": 54,
+    "input_tokens": 10468,
+    "output_tokens": 3134,
     "cost_usd": 0.0695,
     "trust_score": 0.91,
     "tags": [
       "mathlib",
       "algebra"
-    ]
+    ],
+    "description": "Search Mathlib for topological compactness lemmas",
+    "tool_calls": 11,
+    "files_modified": 3
   },
   {
     "id": "sess_7027aa6390a1",
+    "session_id": "sess_7027aa6390a1",
     "agent_type": "claude",
     "model": "claude-opus-4-6",
     "status": "completed",
     "started_at": "2026-03-04T11:00:00Z",
     "ended_at": "2026-03-04T12:30:00Z",
+    "duration_secs": 4860,
     "event_count": 61,
+    "input_tokens": 11702,
+    "output_tokens": 3701,
     "cost_usd": 0.4531,
     "trust_score": 0.94,
     "tags": [
       "mathlib",
       "topology"
-    ]
+    ],
+    "description": "Verify NucleusDB commit certificate chain",
+    "tool_calls": 14,
+    "files_modified": 4
   },
   {
     "id": "sess_3b70093b52bc",
+    "session_id": "sess_3b70093b52bc",
     "agent_type": "codex",
     "model": "codex-mini-latest",
     "status": "completed",
     "started_at": "2026-03-05T12:00:00Z",
     "ended_at": "2026-03-05T13:30:00Z",
+    "duration_secs": 5280,
     "event_count": 68,
+    "input_tokens": 12936,
+    "output_tokens": 4268,
     "cost_usd": 0.045,
     "trust_score": 0.97,
     "tags": [
       "mathlib",
       "algebra"
-    ]
+    ],
+    "description": "Formalize sheaf cohomology exact sequence",
+    "tool_calls": 17,
+    "files_modified": 1
   },
   {
     "id": "sess_602a04d155c9",
+    "session_id": "sess_602a04d155c9",
     "agent_type": "gemini",
     "model": "gemini-2.5-pro",
     "status": "completed",
     "started_at": "2026-03-06T13:00:00Z",
     "ended_at": "2026-03-06T14:30:00Z",
+    "duration_secs": 5700,
     "event_count": 75,
+    "input_tokens": 14170,
+    "output_tokens": 4835,
     "cost_usd": 0.1004,
     "trust_score": 0.85,
     "tags": [
       "mathlib",
       "topology"
-    ]
+    ],
+    "description": "Audit MCP tool registry for dead endpoints",
+    "tool_calls": 20,
+    "files_modified": 2
   },
   {
     "id": "sess_a3c99e9a3d75",
+    "session_id": "sess_a3c99e9a3d75",
     "agent_type": "claude",
     "model": "claude-opus-4-6",
     "status": "completed",
     "started_at": "2026-03-07T14:00:00Z",
     "ended_at": "2026-03-07T15:30:00Z",
+    "duration_secs": 6120,
     "event_count": 82,
+    "input_tokens": 15404,
+    "output_tokens": 5402,
     "cost_usd": 0.6362,
     "trust_score": 0.88,
     "tags": [
       "mathlib",
       "algebra"
-    ]
+    ],
+    "description": "Prove ML-KEM encapsulation correctness",
+    "tool_calls": 23,
+    "files_modified": 3
   },
   {
     "id": "sess_ddea6b89485a",
+    "session_id": "sess_ddea6b89485a",
     "agent_type": "codex",
     "model": "codex-mini-latest",
     "status": "completed",
     "started_at": "2026-03-08T15:00:00Z",
     "ended_at": "2026-03-08T16:30:00Z",
+    "duration_secs": 6540,
     "event_count": 89,
+    "input_tokens": 16638,
+    "output_tokens": 5969,
     "cost_usd": 0.0608,
     "trust_score": 0.91,
     "tags": [
       "mathlib",
       "topology"
-    ]
+    ],
+    "description": "Translate Isabelle lattice theory to Lean",
+    "tool_calls": 26,
+    "files_modified": 4
   },
   {
     "id": "sess_e7afa042bed4",
+    "session_id": "sess_e7afa042bed4",
     "agent_type": "gemini",
     "model": "gemini-2.5-pro",
     "status": "completed",
     "started_at": "2026-03-09T16:00:00Z",
     "ended_at": "2026-03-09T17:30:00Z",
+    "duration_secs": 6960,
     "event_count": 96,
+    "input_tokens": 17872,
+    "output_tokens": 6536,
     "cost_usd": 0.1312,
     "trust_score": 0.94,
     "tags": [
       "mathlib",
       "algebra"
-    ]
+    ],
+    "description": "Fix sorry in Bridge.lean support_iff_search",
+    "tool_calls": 29,
+    "files_modified": 1
   },
   {
     "id": "sess_e6c858abfa77",
+    "session_id": "sess_e6c858abfa77",
     "agent_type": "claude",
     "model": "claude-opus-4-6",
     "status": "completed",
     "started_at": "2026-03-10T17:00:00Z",
     "ended_at": "2026-03-10T18:30:00Z",
+    "duration_secs": 7380,
     "event_count": 103,
+    "input_tokens": 19106,
+    "output_tokens": 7103,
     "cost_usd": 0.8193,
     "trust_score": 0.97,
     "tags": [
       "mathlib",
       "topology"
-    ]
+    ],
+    "description": "Optimize ATP premise retrieval embeddings",
+    "tool_calls": 32,
+    "files_modified": 2
   },
   {
     "id": "sess_657ddc412a47",
+    "session_id": "sess_657ddc412a47",
     "agent_type": "codex",
     "model": "codex-mini-latest",
     "status": "active",
     "started_at": "2026-03-11T18:00:00Z",
     "ended_at": null,
+    "duration_secs": null,
     "event_count": 110,
+    "input_tokens": 20340,
+    "output_tokens": 7670,
     "cost_usd": 0.0765,
     "trust_score": 0.85,
     "tags": [
       "mathlib",
       "algebra"
-    ]
+    ],
+    "description": "Verify witness chain completeness theorem",
+    "tool_calls": 35,
+    "files_modified": 3
   },
   {
     "id": "sess_f04e668a1d0f",
+    "session_id": "sess_f04e668a1d0f",
     "agent_type": "gemini",
     "model": "gemini-2.5-pro",
     "status": "failed",
     "started_at": "2026-03-12T19:00:00Z",
     "ended_at": null,
+    "duration_secs": null,
     "event_count": 117,
+    "input_tokens": 21574,
+    "output_tokens": 8237,
     "cost_usd": 0.162,
     "trust_score": 0.88,
     "tags": [
       "mathlib",
       "topology"
-    ]
+    ],
+    "description": "Review P2PCLAW paper: Constructive Sheaf Cohomology",
+    "tool_calls": 38,
+    "files_modified": 4
   }
 ]

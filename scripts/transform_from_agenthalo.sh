@@ -33,6 +33,17 @@ sed -i '/<meta http-equiv="Cache-Control"/d' "$OUTPUT/index.html"
 sed -i '/<meta http-equiv="Pragma"/d' "$OUTPUT/index.html"
 sed -i '/<meta http-equiv="Expires"/d' "$OUTPUT/index.html"
 
+# --- Step 3b: Rewrite absolute page links to relative ---
+# The dashboard uses href="/gates.html", "/codeguard.html", "/forge.html" which resolve
+# to the webapp root when served inside an iframe. Rewrite to relative paths.
+for html_file in "$OUTPUT"/index.html "$OUTPUT"/gates.html "$OUTPUT"/codeguard.html "$OUTPUT"/forge.html; do
+  if [ -f "$html_file" ]; then
+    sed -i 's|href="/gates.html"|href="gates.html"|g' "$html_file"
+    sed -i 's|href="/codeguard.html"|href="codeguard.html"|g' "$html_file"
+    sed -i 's|href="/forge.html"|href="forge.html"|g' "$html_file"
+  fi
+done
+
 # --- Step 4: Extract route manifest from Rust source ---
 # Only extract paths from actual axum route registrations (.route, .get, .post, etc.),
 # NOT every quoted slash-string (which would include /bin/bash, filesystem paths, etc.)

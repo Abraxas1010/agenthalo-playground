@@ -237,6 +237,29 @@
   var STUB_RESPONSE = { ok: true, demo: true,
     message: "This action is simulated in demo mode. Install AgentHALO for real functionality." };
 
+  // --- Live data generators (for endpoints that need variation) ---
+  var _snapshotTick = 0;
+  function liveSystemSnapshot(base) {
+    _snapshotTick++;
+    var t = _snapshotTick * 0.3;
+    // Simulate oscillating CPU/GPU load to make system monitor interesting
+    var cpuWave = Math.sin(t) * 15 + Math.sin(t * 2.7) * 8 + Math.sin(t * 0.4) * 10;
+    var gpuWave = Math.cos(t * 0.8) * 12 + Math.sin(t * 1.5) * 10;
+    return Object.assign({}, base, {
+      cpu_percent: Math.max(5, Math.min(98, base.cpu_percent + cpuWave)),
+      gpu_percent: Math.max(10, Math.min(99, (base.gpu_percent || 82) + gpuWave)),
+      memory_used_mb: Math.round(base.memory_used_mb + Math.sin(t * 0.5) * 500),
+      gpu_memory_used_mb: Math.round((base.gpu_memory_used_mb || 19200) + Math.sin(t * 0.7) * 800),
+      load_avg: [
+        Math.round((8.2 + Math.sin(t) * 3) * 10) / 10,
+        Math.round((6.5 + Math.sin(t * 0.5) * 2) * 10) / 10,
+        Math.round((4.1 + Math.sin(t * 0.3) * 1.5) * 10) / 10,
+      ],
+      network_rx_bytes: base.network_rx_bytes + _snapshotTick * 524288,
+      network_tx_bytes: base.network_tx_bytes + _snapshotTick * 131072,
+    });
+  }
+
   // --- Override fetch ---
   window.fetch = async function(input, init) {
     var url = typeof input === "string" ? input : (input && input.url ? input.url : "");
@@ -248,6 +271,25 @@
     }
 
     if (!path || !path.startsWith("/api/")) return _realFetch(input, init);
+
+    // --- Special handlers for endpoints needing dynamic data ---
+
+    // System snapshot: return oscillating values for live system monitor
+    if (path === "/api/system/snapshot") {
+      var base = await loadFixture("system-snapshot");
+      return jsonResponse(base ? liveSystemSnapshot(base) : STUB_RESPONSE);
+    }
+
+    // Workflow detail: /api/workflows/{id} — return from the workflows list
+    if (path.match(/^\/api\/workflows\/[^/]+$/) && (!init || !init.method || init.method === "GET")) {
+      var wfId = path.split("/").pop();
+      var wfList = await loadFixture("workflows");
+      if (wfList && wfList.workflows) {
+        var wf = wfList.workflows.find(function(w) { return w.workflow_id === wfId || w.id === wfId; });
+        if (wf) return jsonResponse(wf);
+      }
+      return jsonResponse(STUB_RESPONSE);
+    }
 
     var fixture = matchRoute(path);
     if (!fixture) {

@@ -52,13 +52,20 @@ def generate_status():
 
 def generate_system_snapshot():
     return {
-        "cpu_percent": 12.4,
-        "memory_used_mb": 384,
-        "memory_total_mb": 16384,
-        "disk_used_gb": 2.1,
+        "cpu_percent": 67.3,
+        "memory_used_mb": 12480,
+        "memory_total_mb": 32768,
+        "disk_used_gb": 142.7,
         "disk_total_gb": 500,
-        "process_count": 4,
+        "process_count": 14,
         "uptime_secs": 604800,
+        "cpu_cores": 16,
+        "load_avg": [8.2, 6.5, 4.1],
+        "gpu_percent": 82.4,
+        "gpu_memory_used_mb": 19200,
+        "gpu_memory_total_mb": 24576,
+        "network_rx_bytes": 847293440,
+        "network_tx_bytes": 234881024,
     }
 
 
@@ -138,6 +145,20 @@ def generate_sessions():
         ("codex", "codex-mini-latest", 1.50, 6.0),
         ("gemini", "gemini-2.5-pro", 3.50, 10.50),
     ]
+    task_descs = [
+        "Prove group homomorphism preserves identity",
+        "Translate Coq ring theory to Lean 4",
+        "Search Mathlib for topological compactness lemmas",
+        "Verify NucleusDB commit certificate chain",
+        "Formalize sheaf cohomology exact sequence",
+        "Audit MCP tool registry for dead endpoints",
+        "Prove ML-KEM encapsulation correctness",
+        "Translate Isabelle lattice theory to Lean",
+        "Fix sorry in Bridge.lean support_iff_search",
+        "Optimize ATP premise retrieval embeddings",
+        "Verify witness chain completeness theorem",
+        "Review P2PCLAW paper: Constructive Sheaf Cohomology",
+    ]
     sessions = []
     for i in range(12):
         agent_name, model, in_cost, out_cost = agents[i % 3]
@@ -146,15 +167,22 @@ def generate_sessions():
         cost = (input_tokens * in_cost + output_tokens * out_cost) / 1_000_000
         sessions.append({
             "id": deterministic_id("sess", i),
+            "session_id": deterministic_id("sess", i),
             "agent_type": agent_name,
             "model": model,
             "status": "completed" if i < 10 else ("active" if i == 10 else "failed"),
             "started_at": f"2026-03-{(i % 28) + 1:02d}T{8 + i % 14:02d}:00:00Z",
             "ended_at": f"2026-03-{(i % 28) + 1:02d}T{9 + i % 14:02d}:30:00Z" if i < 10 else None,
+            "duration_secs": 3600 + i * 420 if i < 10 else None,
             "event_count": 40 + i * 7,
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
             "cost_usd": round(cost, 4),
             "trust_score": round(0.85 + (i % 5) * 0.03, 3),
             "tags": ["mathlib", "algebra"] if i % 2 == 0 else ["mathlib", "topology"],
+            "description": task_descs[i],
+            "tool_calls": 5 + i * 3,
+            "files_modified": 1 + i % 4,
         })
     return sessions
 
@@ -243,17 +271,25 @@ def generate_trust():
 
 
 def generate_attestations():
+    att_types = ["identity", "session", "proof", "capability", "trust_update",
+                 "session", "proof", "session", "identity", "capability",
+                 "session", "proof", "trust_update", "session", "proof"]
     return {
         "attestations": [
             {
                 "id": deterministic_id("att", i),
-                "type": ["identity", "session", "proof", "capability"][i % 4],
-                "subject": deterministic_id("sess", i),
+                "type": att_types[i % len(att_types)],
+                "agent_type": ["claude", "codex", "gemini"][i % 3],
+                "subject": deterministic_id("sess", i % 12),
+                "session_id": deterministic_id("sess", i % 12),
                 "issuer": "did:halo:z6Mkdemo1234567890abcdef",
-                "issued_at": f"2026-03-{(i % 28) + 1:02d}T12:00:00Z",
+                "created_at": f"2026-03-{max(1, 21 - i):02d}T{10 + i % 12:02d}:{(i * 7) % 60:02d}:00Z",
+                "timestamp": 1742550000 + i * 3600,
+                "issued_at": f"2026-03-{max(1, 21 - i):02d}T{10 + i % 12:02d}:{(i * 7) % 60:02d}:00Z",
                 "verified": True,
+                "merkle_root": hashlib.sha256(f"att-merkle-{i}".encode()).hexdigest()[:32],
             }
-            for i in range(8)
+            for i in range(15)
         ]
     }
 
@@ -621,16 +657,33 @@ def generate_orch_mesh():
 
 # ---------- Workflows ----------
 def generate_workflows():
-    return {
-        "workflows": [
-            {"id": deterministic_id("wf", 0), "name": "Proof Pipeline", "status": "idle",
-             "steps": 5, "last_run": "2026-03-20T14:00:00Z"},
-            {"id": deterministic_id("wf", 1), "name": "Translation Batch", "status": "idle",
-             "steps": 3, "last_run": "2026-03-19T10:00:00Z"},
-            {"id": deterministic_id("wf", 2), "name": "Nightly Verification", "status": "idle",
-             "steps": 7, "last_run": "2026-03-21T02:00:00Z"},
-        ]
-    }
+    wf_data = [
+        {"name": "Proof Pipeline", "steps": 5, "last_run": "2026-03-20T14:00:00Z"},
+        {"name": "Translation Batch", "steps": 3, "last_run": "2026-03-19T10:00:00Z"},
+        {"name": "Nightly Verification", "steps": 7, "last_run": "2026-03-21T02:00:00Z"},
+    ]
+    workflows = []
+    for i, wf in enumerate(wf_data):
+        wf_id = deterministic_id("wf", i)
+        workflows.append({
+            "workflow_id": wf_id,
+            "id": wf_id,
+            "name": wf["name"],
+            "status": "idle",
+            "steps": wf["steps"],
+            "last_run": wf["last_run"],
+            "created_at": 1710900000 + i * 86400,
+            "updated_at": 1710900000 + i * 86400,
+            "data": {"last_node_id": 3, "last_link_id": 2, "nodes": [
+                {"id": 1, "type": "agent/invoke", "pos": [100, 200], "size": [180, 60],
+                 "properties": {"agent": "claude", "model": "claude-opus-4-6"}},
+                {"id": 2, "type": "tool/search", "pos": [350, 200], "size": [180, 60],
+                 "properties": {"tool": "prove_assist"}},
+                {"id": 3, "type": "gate/verify", "pos": [600, 200], "size": [180, 60],
+                 "properties": {"gate": "lean_check"}},
+            ], "links": [[1, 1, 0, 2, 0, ""], [2, 2, 0, 3, 0, ""]]},
+        })
+    return {"workflows": workflows}
 
 
 # ---------- P2PCLAW ----------

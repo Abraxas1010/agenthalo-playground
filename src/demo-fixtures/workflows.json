@@ -1,25 +1,244 @@
 {
   "workflows": [
     {
+      "workflow_id": "wf_7313a7042cbf",
       "id": "wf_7313a7042cbf",
       "name": "Proof Pipeline",
       "status": "idle",
       "steps": 5,
-      "last_run": "2026-03-20T14:00:00Z"
+      "last_run": "2026-03-20T14:00:00Z",
+      "created_at": 1710900000,
+      "updated_at": 1710900000,
+      "data": {
+        "last_node_id": 3,
+        "last_link_id": 2,
+        "nodes": [
+          {
+            "id": 1,
+            "type": "agent/invoke",
+            "pos": [
+              100,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "agent": "claude",
+              "model": "claude-opus-4-6"
+            }
+          },
+          {
+            "id": 2,
+            "type": "tool/search",
+            "pos": [
+              350,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "tool": "prove_assist"
+            }
+          },
+          {
+            "id": 3,
+            "type": "gate/verify",
+            "pos": [
+              600,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "gate": "lean_check"
+            }
+          }
+        ],
+        "links": [
+          [
+            1,
+            1,
+            0,
+            2,
+            0,
+            ""
+          ],
+          [
+            2,
+            2,
+            0,
+            3,
+            0,
+            ""
+          ]
+        ]
+      }
     },
     {
+      "workflow_id": "wf_b3dcb3863c91",
       "id": "wf_b3dcb3863c91",
       "name": "Translation Batch",
       "status": "idle",
       "steps": 3,
-      "last_run": "2026-03-19T10:00:00Z"
+      "last_run": "2026-03-19T10:00:00Z",
+      "created_at": 1710986400,
+      "updated_at": 1710986400,
+      "data": {
+        "last_node_id": 3,
+        "last_link_id": 2,
+        "nodes": [
+          {
+            "id": 1,
+            "type": "agent/invoke",
+            "pos": [
+              100,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "agent": "claude",
+              "model": "claude-opus-4-6"
+            }
+          },
+          {
+            "id": 2,
+            "type": "tool/search",
+            "pos": [
+              350,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "tool": "prove_assist"
+            }
+          },
+          {
+            "id": 3,
+            "type": "gate/verify",
+            "pos": [
+              600,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "gate": "lean_check"
+            }
+          }
+        ],
+        "links": [
+          [
+            1,
+            1,
+            0,
+            2,
+            0,
+            ""
+          ],
+          [
+            2,
+            2,
+            0,
+            3,
+            0,
+            ""
+          ]
+        ]
+      }
     },
     {
+      "workflow_id": "wf_109303069d28",
       "id": "wf_109303069d28",
       "name": "Nightly Verification",
       "status": "idle",
       "steps": 7,
-      "last_run": "2026-03-21T02:00:00Z"
+      "last_run": "2026-03-21T02:00:00Z",
+      "created_at": 1711072800,
+      "updated_at": 1711072800,
+      "data": {
+        "last_node_id": 3,
+        "last_link_id": 2,
+        "nodes": [
+          {
+            "id": 1,
+            "type": "agent/invoke",
+            "pos": [
+              100,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "agent": "claude",
+              "model": "claude-opus-4-6"
+            }
+          },
+          {
+            "id": 2,
+            "type": "tool/search",
+            "pos": [
+              350,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "tool": "prove_assist"
+            }
+          },
+          {
+            "id": 3,
+            "type": "gate/verify",
+            "pos": [
+              600,
+              200
+            ],
+            "size": [
+              180,
+              60
+            ],
+            "properties": {
+              "gate": "lean_check"
+            }
+          }
+        ],
+        "links": [
+          [
+            1,
+            1,
+            0,
+            2,
+            0,
+            ""
+          ],
+          [
+            2,
+            2,
+            0,
+            3,
+            0,
+            ""
+          ]
+        ]
+      }
     }
   ]
 }

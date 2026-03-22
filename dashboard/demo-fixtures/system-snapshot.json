@@ -1,9 +1,20 @@
 {
-  "cpu_percent": 12.4,
-  "memory_used_mb": 384,
-  "memory_total_mb": 16384,
-  "disk_used_gb": 2.1,
+  "cpu_percent": 67.3,
+  "memory_used_mb": 12480,
+  "memory_total_mb": 32768,
+  "disk_used_gb": 142.7,
   "disk_total_gb": 500,
-  "process_count": 4,
-  "uptime_secs": 604800
+  "process_count": 14,
+  "uptime_secs": 604800,
+  "cpu_cores": 16,
+  "load_avg": [
+    8.2,
+    6.5,
+    4.1
+  ],
+  "gpu_percent": 82.4,
+  "gpu_memory_used_mb": 19200,
+  "gpu_memory_total_mb": 24576,
+  "network_rx_bytes": 847293440,
+  "network_tx_bytes": 234881024
 }
