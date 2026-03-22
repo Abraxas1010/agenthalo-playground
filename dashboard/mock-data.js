@@ -308,6 +308,15 @@ window.DEMO_DATA = {
   },
 };
 
+// ── Force all nav sub-items always visible (demo mode) ────────
+// Production app.js toggles nav-sub-visible based on current page.
+// In demo mode, all sub-items should always be visible.
+(function() {
+  var style = document.createElement('style');
+  style.textContent = '.nav-sub-item { max-height: 50px !important; opacity: 1 !important; overflow: visible !important; }';
+  document.head.appendChild(style);
+})();
+
 // ── Universal fetch override ──────────────────────────────────
 // Catches ALL /api/* calls from cockpit.js, genesis-docs.js, forge.js, etc.
 // that use fetch() directly instead of api().
