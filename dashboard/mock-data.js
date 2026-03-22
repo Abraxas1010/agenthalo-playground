@@ -313,7 +313,7 @@ window.DEMO_DATA = {
 // In demo mode, all sub-items should always be visible.
 (function() {
   var style = document.createElement('style');
-  style.textContent = '.nav-sub-item { max-height: 50px !important; opacity: 1 !important; overflow: visible !important; }';
+  style.textContent = '.nav-sub-item { max-height: 50px !important; opacity: 1 !important; } .nav-sub-item .nav-link.active { color: var(--text) !important; background: none !important; } .nav-sub-item .nav-link:hover { color: var(--accent) !important; }';
   document.head.appendChild(style);
 })();
 
