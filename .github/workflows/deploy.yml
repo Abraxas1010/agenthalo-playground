@@ -79,7 +79,7 @@ jobs:
         working-directory: webapp
         run: |
           git config user.name "Richard Goodman"
-          git config user.email "richard@apoth3osis.ai"
+          git config user.email "sgoodman@apoth3osis.io"
           git add public/agenthalo-demo/
           if git diff --cached --quiet; then
             echo "No changes to deploy"
