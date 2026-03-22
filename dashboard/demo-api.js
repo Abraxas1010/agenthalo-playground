@@ -13,42 +13,67 @@
     location.hash = "#/lean/lattice";
   }
 
-  // --- Force all nav sections and sub-items visible ---
+  // --- Force all nav sections and sub-items visible in demo mode ---
   // Pre-seed localStorage so app.js initNavSections reads "nothing collapsed".
-  // Then inject a <style> tag with higher specificity to override the hiding.
-  try {
-    localStorage.setItem("nav_collapsed", "{}");
-  } catch(_e) {}
+  try { localStorage.setItem("nav_collapsed", "{}"); } catch(_e) {}
 
-  // Inject style with ID selector for higher specificity than style.css rules
-  var navStyle = document.createElement("style");
-  navStyle.textContent =
-    "#sidebar li.nav-section-hidden { max-height:50px; opacity:1; padding:0 12px; pointer-events:auto; overflow:visible; }" +
-    "#sidebar .nav-sub-item { max-height:50px; opacity:1; overflow:visible; }";
-  document.head.appendChild(navStyle);
-
-  // One-shot cleanup after app.js initializes (no MutationObserver)
+  // Force all nav items visible: remove hidden classes, add visible classes,
+  // and critically CLEAR inline display:none set by __updateNavVisibility.
   function forceNavOpen() {
-    document.querySelectorAll(".nav-section-hidden").forEach(function(el) {
-      el.classList.remove("nav-section-hidden");
-    });
-    document.querySelectorAll(".nav-sub-item").forEach(function(el) {
-      el.classList.add("nav-sub-visible");
-    });
+    // Remove collapsed state from section headers
     document.querySelectorAll(".nav-section.collapsed").forEach(function(el) {
       el.classList.remove("collapsed");
     });
-  }
-  // Run twice: once on DOMContentLoaded, once 500ms later (after app.js init)
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function() {
-      forceNavOpen();
-      setTimeout(forceNavOpen, 500);
+    // Remove hidden class from section items
+    document.querySelectorAll(".nav-section-hidden").forEach(function(el) {
+      el.classList.remove("nav-section-hidden");
     });
-  } else {
-    forceNavOpen();
-    setTimeout(forceNavOpen, 500);
+    // Force ALL sub-items visible
+    document.querySelectorAll(".nav-sub-item").forEach(function(el) {
+      el.classList.add("nav-sub-visible");
+      el.style.display = "";  // Clear inline display:none from __updateNavVisibility
+    });
+    // Force parent links expanded
+    var overviewParent = document.getElementById("nav-overview-parent");
+    if (overviewParent) overviewParent.classList.add("nav-expanded");
+    var leanParent = document.getElementById("nav-lean-parent");
+    if (leanParent) leanParent.classList.add("nav-expanded");
+    // Clear display:none on ALL nav items (set by __updateNavVisibility)
+    document.querySelectorAll(".nav-links li").forEach(function(li) {
+      li.style.display = "";
+    });
+    document.querySelectorAll(".nav-links [data-page]").forEach(function(link) {
+      var li = link.closest("li");
+      if (li) li.style.display = "";
+    });
   }
+
+  // Override __updateNavVisibility AFTER app.js defines it.
+  // app.js hides Lean System nav when /api/worktree/active-profile has no lean path.
+  // In demo mode, we want everything visible always.
+  function overrideNavVisibility() {
+    window.__updateNavVisibility = forceNavOpen;
+    window.__updateLeanNavVisibility = forceNavOpen;
+  }
+
+  // Schedule: run forceNavOpen aggressively at multiple points to catch
+  // all code paths that hide nav items (initNavSections, __updateNavVisibility, route()).
+  function initDemoNav() {
+    overrideNavVisibility();
+    forceNavOpen();
+    setTimeout(forceNavOpen, 300);
+    setTimeout(forceNavOpen, 800);
+    setTimeout(forceNavOpen, 1500);
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initDemoNav);
+  } else {
+    initDemoNav();
+  }
+  // Re-force after every hash change — route() re-collapses sub-items
+  window.addEventListener("hashchange", function() {
+    setTimeout(forceNavOpen, 50);
+  });
 
   // --- Fixture loader (lazy, cached) ---
   async function loadFixture(name) {
@@ -81,6 +106,7 @@
     "crypto-status": { locked: false, has_password: true, password_protected: true, bootstrap_mode: "disabled", migration_status: "none", session_count: 1, scoped_key_count: 0 },
     "genesis-status": { completed: true, did_uri: "did:halo:z6Mkdemo1234567890abcdef", seed_hash_sha256: "demo0000000000000000000000000000" },
     "status": { version: "0.3.0", demo_mode: true, session_count: 12, total_cost_usd: 42.87, trust_score: 0.94, crypto_status: "unlocked" },
+    "worktree-profile": { lean_project_path: "/workspace/lean", hidden_nav_items: [], profile_name: "demo", worktree_path: "/workspace" },
   };
 
   // --- Route table ---
@@ -269,7 +295,9 @@
     // OpenClaw
     ["/api/openclaw/",               "openclaw-stub",    {}],
 
-    // Worktree isolation
+    // Worktree isolation — active-profile must return lean_project_path
+    // so __updateNavVisibility shows the Lean System nav item
+    ["/api/worktree/active-profile", "worktree-profile", { exact: true }],
     ["/api/worktree/",               "worktree-stub",    {}],
 
     // Payment / x402 transactions
