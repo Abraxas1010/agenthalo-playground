@@ -1,7 +1,7 @@
 {
   "source_repo": "Abraxas1010/agenthalo",
-  "source_commit": "115da28",
-  "transformed_at": "2026-03-22T02:22:45Z",
+  "source_commit": "faf6cfe",
+  "transformed_at": "2026-03-22T02:27:37Z",
   "route_count": 265,
   "demo_mode": true,
   "wasm_enabled": false
