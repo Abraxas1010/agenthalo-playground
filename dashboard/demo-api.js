@@ -14,11 +14,20 @@
   }
 
   // --- Force all nav sections and sub-items visible ---
-  // app.js collapses sections via localStorage + JS class toggling.
-  // CSS !important can't reliably override because the source uses !important too.
-  // Instead: clear the collapse state and use a MutationObserver to undo any hiding.
-  try { localStorage.removeItem("nav_collapsed"); } catch(_e) {}
+  // Pre-seed localStorage so app.js initNavSections reads "nothing collapsed".
+  // Then inject a <style> tag with higher specificity to override the hiding.
+  try {
+    localStorage.setItem("nav_collapsed", "{}");
+  } catch(_e) {}
 
+  // Inject style with ID selector for higher specificity than style.css rules
+  var navStyle = document.createElement("style");
+  navStyle.textContent =
+    "#sidebar li.nav-section-hidden { max-height:50px; opacity:1; padding:0 12px; pointer-events:auto; overflow:visible; }" +
+    "#sidebar .nav-sub-item { max-height:50px; opacity:1; overflow:visible; }";
+  document.head.appendChild(navStyle);
+
+  // One-shot cleanup after app.js initializes (no MutationObserver)
   function forceNavOpen() {
     document.querySelectorAll(".nav-section-hidden").forEach(function(el) {
       el.classList.remove("nav-section-hidden");
@@ -30,16 +39,15 @@
       el.classList.remove("collapsed");
     });
   }
-
-  // Run after DOM is ready and keep watching for app.js re-collapsing
+  // Run twice: once on DOMContentLoaded, once 500ms later (after app.js init)
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", function() {
       forceNavOpen();
-      new MutationObserver(forceNavOpen).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
+      setTimeout(forceNavOpen, 500);
     });
   } else {
     forceNavOpen();
-    new MutationObserver(forceNavOpen).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
+    setTimeout(forceNavOpen, 500);
   }
 
   // --- Fixture loader (lazy, cached) ---
