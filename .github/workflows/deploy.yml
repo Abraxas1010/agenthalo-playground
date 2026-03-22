@@ -78,7 +78,7 @@ jobs:
       - name: Commit and push
         working-directory: webapp
         run: |
-          git config user.name "Richard Goodman"
+          git config user.name "Stephanie Goodman"
           git config user.email "sgoodman@apoth3osis.io"
           git add public/agenthalo-demo/
           if git diff --cached --quiet; then
