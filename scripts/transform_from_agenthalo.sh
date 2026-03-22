@@ -43,17 +43,17 @@ for html_file in "$OUTPUT"/index.html "$OUTPUT"/gates.html "$OUTPUT"/codeguard.h
     sed -i 's|href="/gates.html"|href="gates.html"|g' "$html_file"
     sed -i 's|href="/codeguard.html"|href="codeguard.html"|g' "$html_file"
     sed -i 's|href="/forge.html"|href="forge.html"|g' "$html_file"
-    # Importmap and script src: "/vendor/" → "vendor/"
-    sed -i 's|"/vendor/|"vendor/|g' "$html_file"
+    # Importmap and script src: "/vendor/" → "./vendor/"
+    sed -i 's|"/vendor/|"./vendor/|g' "$html_file"
   fi
 done
 
 # JS: dynamic import('/vendor/...') and fetch('/vendor/...') and fetch('/proof-lattice...')
 for js_file in "$OUTPUT"/*.js; do
-  sed -i "s|import('/vendor/|import('vendor/|g" "$js_file" 2>/dev/null || true
-  sed -i 's|import("/vendor/|import("vendor/|g' "$js_file" 2>/dev/null || true
-  sed -i "s|fetch('/vendor/|fetch('vendor/|g" "$js_file" 2>/dev/null || true
-  sed -i "s|fetch('/proof-lattice|fetch('proof-lattice|g" "$js_file" 2>/dev/null || true
+  sed -i "s|import('/vendor/|import('./vendor/|g" "$js_file" 2>/dev/null || true
+  sed -i 's|import("/vendor/|import("./vendor/|g' "$js_file" 2>/dev/null || true
+  sed -i "s|fetch('/vendor/|fetch('./vendor/|g" "$js_file" 2>/dev/null || true
+  sed -i "s|fetch('/proof-lattice|fetch('./proof-lattice|g" "$js_file" 2>/dev/null || true
 done
 
 # --- Step 4: Extract route manifest from Rust source ---
