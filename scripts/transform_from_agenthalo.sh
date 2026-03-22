@@ -27,6 +27,18 @@ if ! grep -q 'demo-api.js' "$OUTPUT/index.html"; then
   sed -i '/<script src="app.js"><\/script>/i \  <script src="demo-api.js"><\/script>\n  <script src="demo-banner.js"><\/script>' "$OUTPUT/index.html"
 fi
 
+# --- Step 2b: Force all nav sections open and sub-items visible ---
+# In demo mode, nav sections collapse via localStorage which is empty/stale for visitors.
+# Inject CSS that overrides the collapsed state so all items are always visible.
+if ! grep -q 'demo-nav-force' "$OUTPUT/index.html"; then
+  sed -i '/<\/head>/i \  <style id="demo-nav-force">\
+    /* Demo: force all nav sections and sub-items visible */\
+    .nav-section-hidden { display: list-item !important; }\
+    .nav-sub-item { display: list-item !important; }\
+    .nav-section .section-arrow { transform: rotate(0deg) !important; }\
+  </style>' "$OUTPUT/index.html"
+fi
+
 # --- Step 3: Strip production-only meta tags ---
 # CSP is set by the Rust server via HTTP headers; the meta tags are unnecessary in static hosting
 sed -i '/<meta http-equiv="Cache-Control"/d' "$OUTPUT/index.html"

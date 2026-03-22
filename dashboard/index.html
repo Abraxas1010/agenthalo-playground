@@ -75,6 +75,12 @@
       document.dispatchEvent(new Event('monaco-ready'));
     });
   </script>
+  <style id="demo-nav-force">
+    /* Demo: force all nav sections and sub-items visible */
+    .nav-section-hidden { display: list-item !important; }
+    .nav-sub-item { display: list-item !important; }
+    .nav-section .section-arrow { transform: rotate(0deg) !important; }
+  </style>
 </head>
 <body>
   <div id="crypto-lock-overlay" style="display:none"></div>
