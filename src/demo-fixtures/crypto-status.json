@@ -1,8 +1,11 @@
 {
   "locked": false,
   "has_password": true,
+  "password_protected": true,
   "bootstrap_mode": "disabled",
   "migration_status": "none",
   "session_count": 1,
-  "scoped_key_count": 0
+  "scoped_key_count": 0,
+  "active_scopes": [],
+  "retry_after_secs": 0
 }

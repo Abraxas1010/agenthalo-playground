@@ -6,7 +6,13 @@
 
   const _realFetch = window.fetch.bind(window);
   const _fixtureCache = {};
-  const DEMO_VERSION = "1.0.0";
+  const DEMO_VERSION = "1.0.1";
+
+  // --- Set default page to Lean System if no hash is set ---
+  // This runs BEFORE app.js router, so the router sees #/lean instead of defaulting to config
+  if (!location.hash || location.hash === "#" || location.hash === "#/") {
+    location.hash = "#/lean";
+  }
 
   // --- Fixture loader (lazy, cached) ---
   async function loadFixture(name) {
@@ -36,7 +42,8 @@
       wallet_status: { agentpmt_connected: false, agentaddress_connected: false, agentaddress_address: null },
       container_runtime: { available: false, engine: null },
     },
-    "crypto-status": { locked: false, has_password: true, bootstrap_mode: "disabled", migration_status: "none", session_count: 1, scoped_key_count: 0 },
+    "crypto-status": { locked: false, has_password: true, password_protected: true, bootstrap_mode: "disabled", migration_status: "none", session_count: 1, scoped_key_count: 0 },
+    "genesis-status": { completed: true, did_uri: "did:halo:z6Mkdemo1234567890abcdef", seed_hash_sha256: "demo0000000000000000000000000000" },
     "status": { version: "0.3.0", demo_mode: true, session_count: 12, total_cost_usd: 42.87, trust_score: 0.94, crypto_status: "unlocked" },
   };
 

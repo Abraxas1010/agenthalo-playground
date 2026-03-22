@@ -116,10 +116,13 @@ def generate_crypto_status():
     return {
         "locked": False,
         "has_password": True,
+        "password_protected": True,
         "bootstrap_mode": "disabled",
         "migration_status": "none",
         "session_count": 1,
         "scoped_key_count": 0,
+        "active_scopes": [],
+        "retry_after_secs": 0,
     }
 
 
