@@ -34,9 +34,9 @@
 /cockpit/sessions/{id}
 /cockpit/sessions/{id}/resize
 /cockpit/sessions/{id}/ws
+/codeguard/audit/spawn
 /codeguard/audit/{session_id}/decision
 /codeguard/audit/{session_id}/status
-/codeguard/audit/spawn
 /codeguard/config
 /codeguard/gate-check
 /codeguard/graph
@@ -165,8 +165,8 @@
 /nucleusdb/sql
 /nucleusdb/stats
 /nucleusdb/status
-/nucleusdb/vectors
 /nucleusdb/vector-search
+/nucleusdb/vectors
 /nucleusdb/verify/{key}
 /observatory/clusters
 /observatory/complexity
@@ -248,11 +248,11 @@
 /wdk/status
 /wdk/unlock
 /workflows
+/workflows/instances
 /workflows/{id}
 /workflows/{id}/run
 /workflows/{id}/status
 /workflows/{id}/stop
-/workflows/instances
 /worktree/active-profile
 /worktree/list
 /worktree/profile/{name}
