@@ -45,6 +45,12 @@
                 "type": "file",
                 "path": "HeytingLean/ATheory/HeytingAlgebra.lean",
                 "size": 9800
+              },
+              {
+                "name": "Lattice.lean",
+                "type": "file",
+                "path": "HeytingLean/ATheory/Lattice.lean",
+                "size": 7200
               }
             ]
           },
@@ -63,6 +69,36 @@
                 "type": "file",
                 "path": "HeytingLean/NucleusDB/Proofs.lean",
                 "size": 22000
+              },
+              {
+                "name": "WorktreeIsolation.lean",
+                "type": "file",
+                "path": "HeytingLean/NucleusDB/WorktreeIsolation.lean",
+                "size": 11000
+              }
+            ]
+          },
+          {
+            "name": "Contextual",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Search.lean",
+                "type": "file",
+                "path": "HeytingLean/Contextual/Search.lean",
+                "size": 14000
+              },
+              {
+                "name": "Support.lean",
+                "type": "file",
+                "path": "HeytingLean/Contextual/Support.lean",
+                "size": 16500
+              },
+              {
+                "name": "Program.lean",
+                "type": "file",
+                "path": "HeytingLean/Contextual/Program.lean",
+                "size": 9800
               }
             ]
           }
@@ -75,5 +111,126 @@
         "size": 3200
       }
     ]
-  }
+  },
+  "total_files": 14,
+  "root": "/workspace/lean",
+  "libraries": [
+    {
+      "name": "Mathlib",
+      "root": "/workspace/lean/.lake/packages/mathlib",
+      "total_files": 4200,
+      "tree": {
+        "children": [
+          {
+            "name": "Algebra",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Group",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Basic.lean",
+                    "type": "file",
+                    "path": "Mathlib/Algebra/Group/Basic.lean",
+                    "size": 18000
+                  },
+                  {
+                    "name": "Hom.lean",
+                    "type": "file",
+                    "path": "Mathlib/Algebra/Group/Hom.lean",
+                    "size": 15000
+                  },
+                  {
+                    "name": "Defs.lean",
+                    "type": "file",
+                    "path": "Mathlib/Algebra/Group/Defs.lean",
+                    "size": 12000
+                  }
+                ]
+              },
+              {
+                "name": "Ring",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Basic.lean",
+                    "type": "file",
+                    "path": "Mathlib/Algebra/Ring/Basic.lean",
+                    "size": 20000
+                  },
+                  {
+                    "name": "Ideal.lean",
+                    "type": "file",
+                    "path": "Mathlib/Algebra/Ring/Ideal.lean",
+                    "size": 14000
+                  }
+                ]
+              },
+              {
+                "name": "Order",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Ring.lean",
+                    "type": "file",
+                    "path": "Mathlib/Algebra/Order/Ring.lean",
+                    "size": 11000
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Topology",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Basic.lean",
+                "type": "file",
+                "path": "Mathlib/Topology/Basic.lean",
+                "size": 22000
+              },
+              {
+                "name": "MetricSpace",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Basic.lean",
+                    "type": "file",
+                    "path": "Mathlib/Topology/MetricSpace/Basic.lean",
+                    "size": 25000
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "CategoryTheory",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Functor",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Basic.lean",
+                    "type": "file",
+                    "path": "Mathlib/CategoryTheory/Functor/Basic.lean",
+                    "size": 16000
+                  }
+                ]
+              },
+              {
+                "name": "NatTrans.lean",
+                "type": "file",
+                "path": "Mathlib/CategoryTheory/NatTrans.lean",
+                "size": 13000
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }

@@ -1109,28 +1109,87 @@ def generate_agents_list():
 
 
 def generate_lean_scan():
-    """Lean project scan result expected by proof-game.js."""
+    """Lean project scan result expected by lean.js and proof-game.js."""
+    project_tree = {
+        "children": [
+            {"name": "HeytingLean", "type": "dir", "children": [
+                {"name": "Bridge.lean", "type": "file", "path": "HeytingLean/Bridge.lean", "size": 25600},
+                {"name": "Derives.lean", "type": "file", "path": "HeytingLean/Derives.lean", "size": 58000},
+                {"name": "Context.lean", "type": "file", "path": "HeytingLean/Context.lean", "size": 8200},
+                {"name": "Supports.lean", "type": "file", "path": "HeytingLean/Supports.lean", "size": 12400},
+                {"name": "ATheory", "type": "dir", "children": [
+                    {"name": "AssemblyCore.lean", "type": "file", "path": "HeytingLean/ATheory/AssemblyCore.lean", "size": 15000},
+                    {"name": "HeytingAlgebra.lean", "type": "file", "path": "HeytingLean/ATheory/HeytingAlgebra.lean", "size": 9800},
+                    {"name": "Lattice.lean", "type": "file", "path": "HeytingLean/ATheory/Lattice.lean", "size": 7200},
+                ]},
+                {"name": "NucleusDB", "type": "dir", "children": [
+                    {"name": "Core.lean", "type": "file", "path": "HeytingLean/NucleusDB/Core.lean", "size": 18000},
+                    {"name": "Proofs.lean", "type": "file", "path": "HeytingLean/NucleusDB/Proofs.lean", "size": 22000},
+                    {"name": "WorktreeIsolation.lean", "type": "file", "path": "HeytingLean/NucleusDB/WorktreeIsolation.lean", "size": 11000},
+                ]},
+                {"name": "Contextual", "type": "dir", "children": [
+                    {"name": "Search.lean", "type": "file", "path": "HeytingLean/Contextual/Search.lean", "size": 14000},
+                    {"name": "Support.lean", "type": "file", "path": "HeytingLean/Contextual/Support.lean", "size": 16500},
+                    {"name": "Program.lean", "type": "file", "path": "HeytingLean/Contextual/Program.lean", "size": 9800},
+                ]},
+            ]},
+            {"name": "lakefile.lean", "type": "file", "path": "lakefile.lean", "size": 3200},
+        ],
+    }
+    # Count total files
+    def count_files(node):
+        if not node:
+            return 0
+        if node.get("type") == "file":
+            return 1
+        total = 0
+        for child in node.get("children", []):
+            total += count_files(child)
+        return total
+    total = sum(count_files(c) for c in project_tree["children"])
+
     return {
         "ok": True,
-        "tree": {
-            "children": [
-                {"name": "HeytingLean", "type": "dir", "children": [
-                    {"name": "Bridge.lean", "type": "file", "path": "HeytingLean/Bridge.lean", "size": 25600},
-                    {"name": "Derives.lean", "type": "file", "path": "HeytingLean/Derives.lean", "size": 58000},
-                    {"name": "Context.lean", "type": "file", "path": "HeytingLean/Context.lean", "size": 8200},
-                    {"name": "Supports.lean", "type": "file", "path": "HeytingLean/Supports.lean", "size": 12400},
-                    {"name": "ATheory", "type": "dir", "children": [
-                        {"name": "AssemblyCore.lean", "type": "file", "path": "HeytingLean/ATheory/AssemblyCore.lean", "size": 15000},
-                        {"name": "HeytingAlgebra.lean", "type": "file", "path": "HeytingLean/ATheory/HeytingAlgebra.lean", "size": 9800},
-                    ]},
-                    {"name": "NucleusDB", "type": "dir", "children": [
-                        {"name": "Core.lean", "type": "file", "path": "HeytingLean/NucleusDB/Core.lean", "size": 18000},
-                        {"name": "Proofs.lean", "type": "file", "path": "HeytingLean/NucleusDB/Proofs.lean", "size": 22000},
-                    ]},
-                ]},
-                {"name": "lakefile.lean", "type": "file", "path": "lakefile.lean", "size": 3200},
-            ],
-        },
+        "tree": project_tree,
+        "total_files": total,
+        "root": "/workspace/lean",
+        "libraries": [
+            {
+                "name": "Mathlib",
+                "root": "/workspace/lean/.lake/packages/mathlib",
+                "total_files": 4200,
+                "tree": {
+                    "children": [
+                        {"name": "Algebra", "type": "dir", "children": [
+                            {"name": "Group", "type": "dir", "children": [
+                                {"name": "Basic.lean", "type": "file", "path": "Mathlib/Algebra/Group/Basic.lean", "size": 18000},
+                                {"name": "Hom.lean", "type": "file", "path": "Mathlib/Algebra/Group/Hom.lean", "size": 15000},
+                                {"name": "Defs.lean", "type": "file", "path": "Mathlib/Algebra/Group/Defs.lean", "size": 12000},
+                            ]},
+                            {"name": "Ring", "type": "dir", "children": [
+                                {"name": "Basic.lean", "type": "file", "path": "Mathlib/Algebra/Ring/Basic.lean", "size": 20000},
+                                {"name": "Ideal.lean", "type": "file", "path": "Mathlib/Algebra/Ring/Ideal.lean", "size": 14000},
+                            ]},
+                            {"name": "Order", "type": "dir", "children": [
+                                {"name": "Ring.lean", "type": "file", "path": "Mathlib/Algebra/Order/Ring.lean", "size": 11000},
+                            ]},
+                        ]},
+                        {"name": "Topology", "type": "dir", "children": [
+                            {"name": "Basic.lean", "type": "file", "path": "Mathlib/Topology/Basic.lean", "size": 22000},
+                            {"name": "MetricSpace", "type": "dir", "children": [
+                                {"name": "Basic.lean", "type": "file", "path": "Mathlib/Topology/MetricSpace/Basic.lean", "size": 25000},
+                            ]},
+                        ]},
+                        {"name": "CategoryTheory", "type": "dir", "children": [
+                            {"name": "Functor", "type": "dir", "children": [
+                                {"name": "Basic.lean", "type": "file", "path": "Mathlib/CategoryTheory/Functor/Basic.lean", "size": 16000},
+                            ]},
+                            {"name": "NatTrans.lean", "type": "file", "path": "Mathlib/CategoryTheory/NatTrans.lean", "size": 13000},
+                        ]},
+                    ],
+                },
+            },
+        ],
     }
 
 

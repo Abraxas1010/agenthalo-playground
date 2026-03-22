@@ -12,13 +12,33 @@
   async function loadFixture(name) {
     if (_fixtureCache[name]) return _fixtureCache[name];
     try {
-      const resp = await _realFetch("demo-fixtures/" + name + ".json");
-      if (!resp.ok) return null;
-      const data = await resp.json();
+      // Cache-bust to avoid stale fixtures after deploys
+      var resp = await _realFetch("demo-fixtures/" + name + ".json?v=" + DEMO_VERSION);
+      if (!resp.ok) return _INLINE_FALLBACKS[name] || null;
+      var data = await resp.json();
       _fixtureCache[name] = data;
       return data;
-    } catch { return null; }
+    } catch { return _INLINE_FALLBACKS[name] || null; }
   }
+
+  // Inline fallbacks for critical fixtures that crash if missing nested objects
+  var _INLINE_FALLBACKS = {
+    "config": {
+      dashboard_port: 3100, crt_effects: true, system_monitor_enabled: false,
+      proxy_enabled: false, orchestrator_enabled: true, lean_project: "/workspace/lean",
+      authentication: { authenticated: false, mode: "local", provider: null },
+      x402: { enabled: false, network: "base-sepolia", max_auto_approve_usd: 1.0 },
+      wrapping: { shell_rc: "~/.bashrc", mode: "passthrough" },
+      paths: { home: "/home/demo/.agenthalo", db: "/home/demo/.agenthalo/traces.ndb" },
+      onchain: { chain_name: "Base Sepolia", chain_id: "84532", contract_address: null },
+      addons: { p2pclaw: true, agentpmt_workflows: false },
+      agentpmt: { enabled: false, budget_tag: null, endpoint: null, auth_configured: false, tool_count: 0 },
+      wallet_status: { agentpmt_connected: false, agentaddress_connected: false, agentaddress_address: null },
+      container_runtime: { available: false, engine: null },
+    },
+    "crypto-status": { locked: false, has_password: true, bootstrap_mode: "disabled", migration_status: "none", session_count: 1, scoped_key_count: 0 },
+    "status": { version: "0.3.0", demo_mode: true, session_count: 12, total_cost_usd: 42.87, trust_score: 0.94, crypto_status: "unlocked" },
+  };
 
   // --- Route table ---
   // Format: [pathPrefix, fixtureName, options]
