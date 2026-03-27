@@ -287,7 +287,7 @@ body.no-crt #crt-overlay { display: none; }
 .nav-section.collapsed .section-arrow {
   transform: rotate(-90deg);
 }
-li[data-section-item] {
+li[data-section-item]:not(.nav-sub-item) {
   overflow: hidden;
   max-height: 50px;
   transition: max-height 0.25s ease-out, opacity 0.2s, padding 0.2s;
